@@ -1,104 +1,126 @@
-// import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-    //     <Image
-    //       className="dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js logo"
-    //       width={180}
-    //       height={38}
-    //       priority
-    //     />
-    //     <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-    //       <li className="mb-2">
-    //         Get started by editing{" "}
-    //         <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-    //           src/app/page.tsx
-    //         </code>
-    //         .
-    //       </li>
-    //       <li>Save and see your changes instantly.</li>
-    //     </ol>
-
-    //     <div className="flex gap-4 items-center flex-col sm:flex-row">
-    //       <a
-    //         className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-    //         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         <Image
-    //           className="dark:invert"
-    //           src="/vercel.svg"
-    //           alt="Vercel logomark"
-    //           width={20}
-    //           height={20}
-    //         />
-    //         Deploy now
-    //       </a>
-    //       <a
-    //         className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-    //         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         Read our docs
-    //       </a>
-    //     </div>
-    //   </main>
-    //   <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/file.svg"
-    //         alt="File icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Learn
-    //     </a>
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/window.svg"
-    //         alt="Window icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Examples
-    //     </a>
-    //     <a
-    //       className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    //       href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <Image
-    //         aria-hidden
-    //         src="/globe.svg"
-    //         alt="Globe icon"
-    //         width={16}
-    //         height={16}
-    //       />
-    //       Go to nextjs.org →
-    //     </a>
-    //   </footer>
-    // </div>
-    <div className="">
-
-    </div>
-  );
+	return (
+		<div className='font-[family-name:var(--font-geist-sans)]'>
+			<nav className='navbar bg-[#f9f2e9] px-52 py-8'>
+				<Image src={'/img/nds-horizontal-logo.svg'} width={200} height={200} alt='nds' />
+			</nav>
+			<main id='one' className='bg-[#f9f2e9] py-20'>
+				<section id='tagline' className='px-32'>
+					<h1 className='text-[5rem] text-center font-bold'>
+						Empowering Innovation <br /> Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
+					</h1>
+				</section>
+				<section id='intro-vid' className='px-52 mt-20'>
+					<div className='bg-[#D7AB6C] w-full rounded-3xl p-4'>
+						<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen className='w-full h-screen rounded-3xl'></iframe>
+					</div>
+				</section>
+				<section id='vision' className='px-52 mt-32'>
+					{/* <div className='flex flex-row gap-8 justify-between items-center'>
+						<div className='flex flex-col justify-start items-start w-full bg-[#D7AB6C] rounded-3xl p-4'>
+							<h1 className='text-[5rem] font-bold text-gray-900'>Visi</h1>
+							<p className='text-[1.5rem] font-medium text-gray-900'>Menjadi Penggerak Utama Ekosistem Digital Nusantara untuk Mendukung Pembangunan Ibu Kota Nusantara (IKN) sebagai Pusat Digital Nasional.</p>
+						</div>
+						<div className='bg-zinc-300 w-full'>Mockup Aniamsi Peta atau Gambar</div>
+					</div> */}
+					<h1 className='text-[4rem] font-bold text-gray-900 text-center mb-8'>Visi</h1>
+					<p className='text-[1.5rem] font-medium text-gray-900 text-center px-32'>Menjadi Penggerak Utama Ekosistem Digital Nusantara untuk Mendukung Pembangunan Ibu Kota Nusantara (IKN) sebagai Pusat Digital Nasional.</p>
+				</section>
+				<hr className='w-[10%] h-4 bg-[#D7AB6C] mx-auto mt-32 rounded-full' />
+				<section id='mission' className='px-52 mt-32'>
+					<h1 className='text-[4rem] font-bold text-gray-900 text-center mb-8'>Misi</h1>
+					<div className='grid grid-cols-2 gap-8 px-32'>
+						<div className='flex flex-row items-center gap-4'>
+							<div className='bg-gray-900 p-4 rounded-lg text-[#D7AB6C]'>SVG</div>
+							<p className='text-[1.5rem] font-medium text-gray-900'>Menghubungkan Seluruh Talenta Digital Nusantara.</p>
+						</div>
+						<div className='flex flex-row items-center gap-4'>
+							<div className='bg-gray-900 p-4 rounded-lg text-[#D7AB6C]'>SVG</div>
+							<p className='text-[1.5rem] font-medium text-gray-900'>Meningkatkan Keterampilan Talenta Digital Nusantara.</p>
+						</div>
+						<div className='flex flex-row items-center gap-4 col-span-2 justify-center'>
+							<div className='bg-gray-900 p-4 rounded-lg text-[#D7AB6C]'>SVG</div>
+							<p className='text-[1.5rem] font-medium text-gray-900'>Mendorong Lahirnya Startup Lokal yang Dapat Bersaing di Tingkat Nasional maupun Global.</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<main id='two' className='bg-zinc-50 py-20'>
+				<section id='article' className='px-52'>
+					<h1 className='mb-8 text-[4rem] font-bold text-gray-900 text-center'>Artikel</h1>
+					<div className='flex flex-row gap-8 justify-start items-start'>
+						<div className='flex flex-col gap-4'>
+							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>Latest Post</p>
+							<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl'>Image</div>
+							<h1 className='text-[4rem] font-bold'>Title</h1>
+							<p className='text-[1.5rem] font-medium'>Slug</p>
+						</div>
+						<div className='flex flex-col w-full gap-4'>
+							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>More Articles</p>
+							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
+								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
+								<div className='flex flex-col gap-2'>
+									<h1 className='text-[2rem] font-bold'>Title</h1>
+									<p className='text-[1.2rem] font-medium'>Slug</p>
+								</div>
+							</div>
+							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
+								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
+								<div className='flex flex-col gap-2'>
+									<h1 className='text-[2rem] font-bold'>Title</h1>
+									<p className='text-[1.2rem] font-medium'>Slug</p>
+								</div>
+							</div>
+							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
+								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
+								<div className='flex flex-col gap-2'>
+									<h1 className='text-[2rem] font-bold'>Title</h1>
+									<p className='text-[1.2rem] font-medium'>Slug</p>
+								</div>
+							</div>
+							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
+								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
+								<div className='flex flex-col gap-2'>
+									<h1 className='text-[2rem] font-bold'>Title</h1>
+									<p className='text-[1.2rem] font-medium'>Slug</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<main id='three' className='py-20'>
+				<section id='events' className='px-52'>
+					<h1 className='mb-8 text-[4rem] font-bold text-gray-900 text-center'>Events</h1>
+					<div className='flex flex-row gap-8 justify-start items-start'>
+						<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl'>Image</div>
+						<div className='flex flex-col gap-4'>
+							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>Upcoming</p>
+							<h1 className='text-[4rem] font-bold'>Title</h1>
+							<p className='text-[1.5rem] font-medium'>Slug</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<main id='four' className='bg-[#f9f2e9] py-20'>
+				<section id='join' className='px-52'>
+					<div className='flex justify-between items-center'>
+						<div className=''>Image atau apapun itu</div>
+						<div className='flex flex-col justify-center items-center gap-y-4 bg-[#D7AB6C] px-8 py-4 rounded-3xl'>
+							<h1 className='text-[4rem] font-bold text-gray-900'>Join Us</h1>
+							<p className='text-[1.5rem] font-medium text-gray-900'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptatum.</p>
+							<button className='bg-gray-900 rounded-lg text-[1.5rem] font-medium text-gray-100 px-4 py-2'>Sign Up</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer className='bg-zinc-50 py-20'>
+				<section id='contact' className='px-52'>
+					<Image src={'/img/nds-horizontal-logo.svg'} width={200} height={200} alt='nds' />
+				</section>
+			</footer>
+		</div>
+	);
 }
