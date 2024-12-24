@@ -1,14 +1,12 @@
-import Image from 'next/image';
-
 export default function Home() {
 	return (
 		<div className='font-[family-name:var(--font-geist-sans)]'>
 			<nav className='navbar bg-[#f9f2e9] px-52 py-8'>
-				<Image src={'/img/nds-horizontal-logo.svg'} width={200} height={200} alt='nds' />
+				<img src={'/img/nds-horizontal-logo.svg'} alt='nds' className='w-52 h-auto' />
 			</nav>
 			<main id='one' className='bg-[#f9f2e9] py-20'>
 				<section id='tagline' className='px-32'>
-					<h1 className='text-[5rem] text-center font-bold'>
+					<h1 className='text-[5rem] text-center font-bold leading-tight'>
 						Empowering Innovation <br /> Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
 					</h1>
 				</section>
@@ -53,39 +51,89 @@ export default function Home() {
 					<div className='flex flex-row gap-8 justify-start items-start'>
 						<div className='flex flex-col gap-4'>
 							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>Latest Post</p>
-							<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl'>Image</div>
-							<h1 className='text-[4rem] font-bold'>Title</h1>
-							<p className='text-[1.5rem] font-medium'>Slug</p>
+							<a href='#' className='flex flex-col gap-4 group'>
+								<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl relative overflow-hidden mb-4'>
+									<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
+									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+										<p className='text-white text-2xl font-bold'>Baca Selengkapnya</p>
+									</div>
+								</div>
+								<p className='text-lg'>
+									21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+								</p>
+								<h1 className='text-[3rem] font-bold max-w-[50rem] line-clamp-2 leading-tight group-hover:underline group-hover:underline-offset-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+								<p className='text-[1.3rem] font-medium max-w-[50rem] line-clamp-3 tracking-wide leading-loose'>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus modi hic odio aliquid magnam, nulla, officiis porro adipisci perferendis eveniet velit distinctio quidem ullam, aperiam fugiat?
+									Adipisci reprehenderit minima repellat.
+								</p>
+							</a>
 						</div>
 						<div className='flex flex-col w-full gap-4'>
 							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>More Articles</p>
-							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
-								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
-								<div className='flex flex-col gap-2'>
-									<h1 className='text-[2rem] font-bold'>Title</h1>
-									<p className='text-[1.2rem] font-medium'>Slug</p>
-								</div>
-							</div>
-							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
-								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
-								<div className='flex flex-col gap-2'>
-									<h1 className='text-[2rem] font-bold'>Title</h1>
-									<p className='text-[1.2rem] font-medium'>Slug</p>
-								</div>
-							</div>
-							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
-								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
-								<div className='flex flex-col gap-2'>
-									<h1 className='text-[2rem] font-bold'>Title</h1>
-									<p className='text-[1.2rem] font-medium'>Slug</p>
-								</div>
-							</div>
-							<div className='bg-gray-300 flex flex-row gap-4 w-full rounded-3xl p-4'>
-								<div className='bg-gray-100 w-[20rem] h-[10rem] rounded-3xl'>Image</div>
-								<div className='flex flex-col gap-2'>
-									<h1 className='text-[2rem] font-bold'>Title</h1>
-									<p className='text-[1.2rem] font-medium'>Slug</p>
-								</div>
+							<div className='flex flex-col gap-8'>
+								<a href='#' className='flex flex-row gap-4 w-full group'>
+									<div className='bg-gray-100 w-[20rem] h-[15rem] rounded-3xl relative overflow-hidden'>
+										<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-2xl font-bold'>Baca Selengkapnya</p>
+										</div>
+									</div>
+									<div className='flex flex-col gap-2'>
+										<p className='text-md'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-[2.5rem] font-bold line-clamp-2 leading-tight max-w-[27rem] group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='text-[1.2rem] font-medium max-w-[27rem] line-clamp-3 tracking-wide leading-relaxed'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+									</div>
+								</a>
+								<a href='#' className='flex flex-row gap-4 w-full group'>
+									<div className='bg-gray-100 w-[20rem] h-[15rem] rounded-3xl relative overflow-hidden'>
+										<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-2xl font-bold'>Baca Selengkapnya</p>
+										</div>
+									</div>
+									<div className='flex flex-col gap-2'>
+										<p className='text-md'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-[2.5rem] font-bold line-clamp-2 leading-tight max-w-[27rem] group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='text-[1.2rem] font-medium max-w-[27rem] line-clamp-3 tracking-wide leading-relaxed'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+									</div>
+								</a>
+								<a href='#' className='flex flex-row gap-4 w-full group'>
+									<div className='bg-gray-100 w-[20rem] h-[15rem] rounded-3xl relative overflow-hidden'>
+										<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-2xl font-bold'>Baca Selengkapnya</p>
+										</div>
+									</div>
+									<div className='flex flex-col gap-2'>
+										<p className='text-md'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-[2.5rem] font-bold line-clamp-2 leading-tight max-w-[27rem] group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='text-[1.2rem] font-medium max-w-[27rem] line-clamp-3 tracking-wide leading-relaxed'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -95,11 +143,19 @@ export default function Home() {
 				<section id='events' className='px-52'>
 					<h1 className='mb-8 text-[4rem] font-bold text-gray-900 text-center'>Events</h1>
 					<div className='flex flex-row gap-8 justify-start items-start'>
-						<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl'>Image</div>
-						<div className='flex flex-col gap-4'>
-							<p className='text-[2rem] text-[#D7AB6C] font-semibold'>Upcoming</p>
-							<h1 className='text-[4rem] font-bold'>Title</h1>
-							<p className='text-[1.5rem] font-medium'>Slug</p>
+						<div className='bg-gray-300 w-[50rem] h-[40rem] rounded-3xl overflow-hidden'>
+							<img src='/img/event.jpg' alt='' />
+						</div>
+						<div className='flex flex-col justify-between max-w-[52rem] h-[30rem]'>
+							<div className='flex flex-col gap-4'>
+								<p className='text-[2rem] text-[#D7AB6C] font-semibold'>Upcoming</p>
+								<h1 className='text-[4rem] font-bold line-clamp-3 leading-tight'>NVIDIA Campus Roadshow Balikpapan 2024</h1>
+								<p className='text-[1.5rem] font-medium line-clamp-3 tracking-wide leading-loose'>NVIDIA Powers the World&apos;s AI. And Yours.</p>
+							</div>
+							<div className='flex flex-col gap-4'>
+								<p className='text-[1.5rem] font-medium line-clamp-3 tracking-wide leading-loose'>Location</p>
+								<p className='text-[1.5rem] font-medium line-clamp-3 tracking-wide leading-loose'>Date</p>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -118,7 +174,10 @@ export default function Home() {
 			</main>
 			<footer className='bg-zinc-50 py-20'>
 				<section id='contact' className='px-52'>
-					<Image src={'/img/nds-horizontal-logo.svg'} width={200} height={200} alt='nds' />
+					<div className='flex flex-row justify-between items-center'>
+						<img src={'/img/nds-horizontal-logo.svg'} alt='nds' className='w-60 h-auto' />
+						<p className="text-[1.2rem] font-medium line-clamp-3 tracking-wide leading-loose">&copy; 2024 Nusantara Digital Society. All Rights Reserved.</p>
+					</div>
 				</section>
 			</footer>
 		</div>
