@@ -175,15 +175,15 @@ export default function Home() {
 									<input id='nama_lengkap' type='text' maxLength={30} required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
 								</div>
 								<div className='flex flex-col gap-4'>
-									<label htmlFor='email'>Email</label>
+									<label htmlFor='email' className="text-lg">Email</label>
 									<input id='email' type='email' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
 								</div>
 								<div className='flex flex-col gap-4'>
-									<label htmlFor='pekerjaan'>Pekerjaan</label>
+									<label htmlFor='pekerjaan' className="text-lg">Pekerjaan</label>
 									<input id='pekerjaan' type='text' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
 								</div>
 								<div className='flex flex-col gap-4'>
-									<label htmlFor='no_telp'>No Telp (Aktif Menggunakan WhatsApp)</label>
+									<label htmlFor='no_telp' className="text-lg">No Telp (Aktif Menggunakan WhatsApp)</label>
 									<input id='no_telp' type='text' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
 								</div>
 							</form>
