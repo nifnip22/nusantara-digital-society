@@ -1,3 +1,7 @@
+import Button from "./components/ui/Button";
+import Input from "./components/ui/Input";
+import Form from 'next/form';
+
 export default function Home() {
 	return (
 		<div className='font-[family-name:var(--font-geist-sans)]'>
@@ -169,25 +173,13 @@ export default function Home() {
 						<div className='w-[50%] flex flex-col gap-8 px-12'>
 							<h1 className='text-6xl font-bold text-gray-900'>Join Us</h1>
 							<p className='text-2xl font-medium text-gray-900 tracking-wide leading-relaxed'>Bergabung dengan Komunitas Nusantara Digital Society dan Bersama Kita Tumbuhkan Ekosistem Digital dan Teknologi Nusantara</p>
-							<form action='#' className='flex flex-col gap-8'>
-								<div className='flex flex-col gap-4'>
-									<label htmlFor='nama_lengkap' className="text-lg">Nama Lengkap</label>
-									<input id='nama_lengkap' type='text' maxLength={30} required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
-								</div>
-								<div className='flex flex-col gap-4'>
-									<label htmlFor='email' className="text-lg">Email</label>
-									<input id='email' type='email' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
-								</div>
-								<div className='flex flex-col gap-4'>
-									<label htmlFor='pekerjaan' className="text-lg">Pekerjaan</label>
-									<input id='pekerjaan' type='text' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
-								</div>
-								<div className='flex flex-col gap-4'>
-									<label htmlFor='no_telp' className="text-lg">No Telp (Aktif Menggunakan WhatsApp)</label>
-									<input id='no_telp' type='text' required className="w-full h-10 p-4 text-lg rounded-lg outline-none focus:ring-4 focus:ring-[#D7AB6C]" />
-								</div>
-							</form>
-							<button className='bg-[#D7AB6C] hover:bg-gray-900 rounded-lg text-[1.5rem] font-medium text-gray-100 hover:text-[#D7AB6C] duration-300 px-4 py-2'>Request for Invitation</button>
+							<Form action='#' className='flex flex-col gap-8'>
+								<Input label='Nama Lengkap' inputName='nama_lengkap' type='text' maxLength={30} required={true} disabled={false} />
+								<Input label='Email' inputName='email' type='email' required={true} disabled={false} />
+								<Input label='Pekerjaan' inputName='pekerjaan' type='text' maxLength={30} required={true} disabled={false} />
+								<Input label='No Telepon (Aktif Menggunakan WhatsApp)' inputName='no_telp' type='text' maxLength={30} required={true} disabled={false} />
+							</Form>
+							<Button label="Request for Invitation" variant="primary" type="submit" />
 						</div>
 					</div>
 				</section>
