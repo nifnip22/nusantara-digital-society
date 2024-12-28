@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 	onClick,
 	disabled = false,
 }) => {
-	const baseStyles = 'text-[1.5rem] font-medium rounded-lg px-4 py-2 transition duration-300';
+	const baseStyles = 'text-sm md:text-md xl:text-xl font-medium rounded-lg px-4 py-2 transition duration-300';
 
 	const variants = {
 		primary: 'bg-[#D7AB6C] text-gray-100 hover:bg-gray-900 hover:text-[#D7AB6C]',

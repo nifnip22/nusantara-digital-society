@@ -16,7 +16,7 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ label, inputName, type = 'text', placeholder = '', maxLength = 30, value, onChange, onBlur, required = false, disabled = false }) => {
 	return (
 		<div className='flex flex-col gap-4'>
-			<label htmlFor={inputName} className='text-lg'>
+			<label htmlFor={inputName} className='text-xs md:text-sm xl:text-lg'>
 				{label}
 			</label>
 			<input
@@ -30,7 +30,7 @@ const Input: React.FC<InputProps> = ({ label, inputName, type = 'text', placehol
 				onBlur={onBlur}
 				required={required}
 				disabled={disabled}
-				className={`w-full h-12 px-4 text-lg rounded-lg border border-gray-300 outline-none focus:ring-4 focus:ring-[#D7AB6C] ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+				className={`w-full h-10 md:h-12 px-2 md:px-4 text-xs md:text-sm xl:text-lg rounded-lg border border-gray-300 outline-none focus:ring-4 focus:ring-[#D7AB6C] ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
 			/>
 		</div>
 	);
