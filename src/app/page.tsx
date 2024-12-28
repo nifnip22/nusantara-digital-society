@@ -191,7 +191,7 @@ export default function Home() {
 						<div className='w-full max-w-5xl lg:h-screen overflow-hidden'>
 							<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
 						</div>
-						<div className='max-w-5xl flex flex-col gap-8 py-12 pl-6 lg:pl-12 pr-6 lg:pr-16 2xl:pr-40'>
+						<div className='max-w-5xl flex flex-col gap-8 py-12 pl-6 md:pl-16 pr-6 md:pr-16 2xl:pr-40'>
 							<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900'>Join Us</h1>
 							<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900 tracking-wide leading-relaxed'>
 								Bergabung dengan Komunitas Nusantara Digital Society dan Bersama Kita Tumbuhkan Ekosistem Digital dan Teknologi Nusantara
