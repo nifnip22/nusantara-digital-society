@@ -81,7 +81,9 @@ export default function Home() {
 								<p className='text-xs md:text-sm xl:text-lg'>
 									21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
 								</p>
-								<h1 className='text-xl md:text-2xl xl:text-4xl font-bold max-w-[50rem] line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+								<h1 className='text-xl md:text-2xl xl:text-4xl font-bold max-w-[50rem] line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								</h1>
 								<p className='text-sm md:text-md xl:text-xl font-medium max-w-[50rem] line-clamp-3 tracking-wide leading-relaxed md:leading-loose'>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus modi hic odio aliquid magnam, nulla, officiis porro adipisci perferendis eveniet velit distinctio quidem ullam, aperiam fugiat?
 									Adipisci reprehenderit minima repellat.
@@ -154,7 +156,7 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className="flex justify-center items-center">
+					<div className='flex justify-center items-center'>
 						<Button label='Lihat Semua Artikel' type='button' variant='outline' />
 					</div>
 				</section>
@@ -168,7 +170,10 @@ export default function Home() {
 						</div>
 						<div className='flex flex-col justify-between gap-12 max-w-4xl h-auto'>
 							<div className='flex flex-col gap-4'>
-								<p className='uppercase text-sm md:text-lg xl:text-2xl text-[#D7AB6C] font-semibold'>Upcoming</p>
+								<div>
+									<p className='uppercase text-sm md:text-lg xl:text-2xl text-[#D7AB6C] font-semibold'>Upcoming</p>
+									<hr className='w-12 h-1 bg-[#D7AB6C] mb-4' />
+								</div>
 								<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-3 leading-relaxed md:leading-tight'>NVIDIA Campus Roadshow Balikpapan 2024</h1>
 								<p className='text-sm md:text-md xl:text-xl font-medium line-clamp-3 tracking-wide leading-relaxed md:leading-loose'>NVIDIA Powers the World&apos;s AI. And Yours.</p>
 							</div>
@@ -186,7 +191,7 @@ export default function Home() {
 						<div className='w-full max-w-5xl lg:h-screen overflow-hidden'>
 							<img src={'/img/test.jpg'} alt='nds' className='object-cover w-full h-full' />
 						</div>
-						<div className='max-w-5xl flex flex-col gap-8 py-12 pl-12 pr-16 2xl:pr-40'>
+						<div className='max-w-5xl flex flex-col gap-8 py-12 pl-6 lg:pl-12 pr-6 lg:pr-16 2xl:pr-40'>
 							<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900'>Join Us</h1>
 							<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900 tracking-wide leading-relaxed'>
 								Bergabung dengan Komunitas Nusantara Digital Society dan Bersama Kita Tumbuhkan Ekosistem Digital dan Teknologi Nusantara
