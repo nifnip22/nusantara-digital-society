@@ -4,6 +4,7 @@ import Footer from '@/components/footer';
 import Form from 'next/form';
 import FloatingLabelInput from '@/components/floatingInput';
 import { JoinUsInput } from '@/etc/constant';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -58,7 +59,7 @@ export default function Home() {
 						<div className='xl:pl-52'>
 							<img src={'/img/Test.jpg'} alt='' className='w-full h-auto rounded-3xl' />
 						</div>
-						<a
+						<Link
 							href='#'
 							className='group absolute top-full xl:top-1/2 left-8 xl:left-0 transform -translate-y-1/4 md:-translate-y-1/2 xl:-translate-x-8 bg-gradient-to-r from-[#D7AB6C] to-[#a38253] opacity-90 hover:opacity-100 hover:shadow-2xl duration-300 text-white p-6 rounded-3xl max-w-xs md:max-w-md lg:max-w-lg xl:max-w-2xl'>
 							<p className='uppercase text-sm md:text-lg xl:text-2xl font-semibold tracking-wide'>Terbaru</p>
@@ -68,7 +69,7 @@ export default function Home() {
 								NVIDIA Campus Roadshow 2024 Sukses Diselenggarakan di Universitas Mulia Balikpapan Bekerja Sama dengan Bitracom Gaming pada Hari Kamis (19/12/2024) Kemarin.
 							</p>
 							<p className='opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-md font-semibold text-white-500 hover:text-white-400'>Baca Selengkapnya</p>
-						</a>
+						</Link>
 					</div>
 					<div className='hidden 2xl:block mb-4'>
 						<p className='uppercase text-sm md:text-lg xl:text-2xl text-[#D7AB6C] font-semibold'>Artikel Lainnya</p>
@@ -80,7 +81,7 @@ export default function Home() {
 								<p className='uppercase text-sm md:text-lg xl:text-2xl text-[#D7AB6C] font-semibold'>Artikel Lainnya</p>
 								<hr className='w-6 md:w-12 h-1 bg-[#D7AB6C] mb-4' />
 							</div>
-							<a href='#' className='flex flex-col gap-6 group'>
+							<div className='flex flex-col gap-6 group'>
 								<div className='bg-gray-300 w-full 2xl:max-w-4xl rounded-3xl relative overflow-hidden mb-4'>
 									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
 									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
@@ -99,17 +100,17 @@ export default function Home() {
 									itaque obcaecati aperiam molestias laboriosam non.
 								</p>
 								<div className='flex flex-row gap-4 items-center'>
-									<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 										<p>Tech Talk</p>
-									</a>
-									<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+									</div>
+									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 										<p>AI</p>
-									</a>
+									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div className='flex flex-col gap-16 md:gap-8'>
-							<a href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+							<div className='flex flex-col md:flex-row gap-6 w-full group'>
 								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
 									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
 									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
@@ -129,16 +130,16 @@ export default function Home() {
 										aperiam laudantium neque expedita?
 									</p>
 									<div className='flex flex-row gap-4 items-center'>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>Tech Talk</p>
-										</a>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										</div>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>AI</p>
-										</a>
+										</div>
 									</div>
 								</div>
-							</a>		
-							<a href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+							</div>		
+							<div className='flex flex-col md:flex-row gap-6 w-full group'>
 								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
 									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
 									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
@@ -158,16 +159,16 @@ export default function Home() {
 										aperiam laudantium neque expedita?
 									</p>
 									<div className='flex flex-row gap-4 items-center'>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>Tech Talk</p>
-										</a>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										</div>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>AI</p>
-										</a>
+										</div>
 									</div>
 								</div>
-							</a>		
-							<a href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+							</div>		
+							<div className='flex flex-col md:flex-row gap-6 w-full group'>
 								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
 									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
 									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
@@ -187,15 +188,15 @@ export default function Home() {
 										aperiam laudantium neque expedita?
 									</p>
 									<div className='flex flex-row gap-4 items-center'>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>Tech Talk</p>
-										</a>
-										<a href='#' className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+										</div>
+										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
 											<p>AI</p>
-										</a>
+										</div>
 									</div>
 								</div>
-							</a>		
+							</div>		
 						</div>
 					</div>
 					<div className='flex justify-center items-center'>
