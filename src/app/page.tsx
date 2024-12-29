@@ -5,53 +5,56 @@ import Form from 'next/form';
 import FloatingLabelInput from '@/components/floatingInput';
 import { JoinUsInput } from '@/etc/constant';
 import Link from 'next/link';
+import { Calendar, MapPin } from 'lucide-react';
 
 export default function Home() {
 	return (
 		<div className='font-geist-sans'>
-			<Navbar />
-			<section id='home' className='bg-[#f9f2e9] py-12 md:py-32 xl:py-40'>
-				<main id='tagline' className='px-6 md:px-16 2xl:px-40'>
-					<h1 className='text-4xl md:text-6xl xl:text-8xl text-center font-bold'>
-						Empowering Innovation <br /> Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
-					</h1>
-				</main>
-				<main id='intro-vid' className='px-6 md:px-16 2xl:px-40 mt-20 md:mt-32 xl:mt-40'>
-					<div className='bg-gradient-to-br from-[#D7AB6C] to-[#a38253] w-full h-auto rounded-3xl p-4'>
-						<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen className='w-full aspect-video rounded-3xl'></iframe>
-					</div>
-				</main>
-				<main id='vision' className='px-6 md:px-16 2xl:px-40 mt-20 md:mt-32 xl:mt-40'>
-					<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center mb-10 md:mb-20'>Visi</h1>
-					<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900 text-center lg:px-40'>
-						Menjadi Penggerak Utama Ekosistem Digital Nusantara untuk Mendukung Pembangunan Ibu Kota Nusantara (IKN) sebagai Pusat Digital Nasional.
-					</p>
-				</main>
-				<hr className='w-52 h-3 bg-gradient-to-r from-[#D7AB6C] to-[#a38253] mx-auto mt-20 md:mt-32 xl:mt-40 rounded-full' />
-				<main id='mission' className='px-6 md:px-16 2xl:px-40 mt-10 md:mt-20 xl:mt-40'>
-					<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center mb-10 md:mb-20'>Misi</h1>
-					<div className='grid grid-cols-1 2xl:grid-cols-2 gap-20 lg:px-40'>
-						<div className='flex flex-row items-center gap-4 justify-start'>
-							<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
-								<img src='/icons/connect.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
-							</div>
-							<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Menghubungkan Seluruh Talenta Digital Nusantara.</p>
+			<div className='bg-[#f9f2e9]'>
+				<Navbar />
+				<section id='home' className='py-12 md:py-32 xl:py-40'>
+					<main id='tagline' className='px-6 md:px-16 2xl:px-40'>
+						<h1 className='text-4xl md:text-6xl xl:text-8xl text-center font-bold'>
+							Empowering Innovation <br /> Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
+						</h1>
+					</main>
+					<main id='intro-vid' className='px-6 md:px-16 2xl:px-40 mt-20 md:mt-32 xl:mt-40'>
+						<div className='bg-gradient-to-br from-[#D7AB6C] to-[#a38253] w-full h-auto rounded-3xl p-4'>
+							<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen className='w-full aspect-video rounded-3xl'></iframe>
 						</div>
-						<div className='flex flex-row items-center gap-4 justify-start'>
-							<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
-								<img src='/icons/skill.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
+					</main>
+					<main id='vision' className='px-6 md:px-16 2xl:px-40 mt-20 md:mt-32 xl:mt-40'>
+						<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center mb-10 md:mb-20'>Visi</h1>
+						<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900 text-center lg:px-40'>
+							Menjadi Penggerak Utama Ekosistem Digital Nusantara untuk Mendukung Pembangunan Ibu Kota Nusantara (IKN) sebagai Pusat Digital Nasional.
+						</p>
+					</main>
+					<hr className='w-52 h-3 bg-gradient-to-r from-[#D7AB6C] to-[#a38253] mx-auto mt-20 md:mt-32 xl:mt-40 rounded-full' />
+					<main id='mission' className='px-6 md:px-16 2xl:px-40 mt-10 md:mt-20 xl:mt-40'>
+						<h1 className='text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center mb-10 md:mb-20'>Misi</h1>
+						<div className='grid grid-cols-1 2xl:grid-cols-2 gap-20 lg:px-40'>
+							<div className='flex flex-row items-center gap-4 justify-start'>
+								<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
+									<img src='/icons/connect.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
+								</div>
+								<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Menghubungkan Seluruh Talenta Digital Nusantara.</p>
 							</div>
-							<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Meningkatkan Keterampilan Talenta Digital Nusantara.</p>
-						</div>
-						<div className='flex flex-row items-center gap-4 2xl:col-span-2 justify-start 2xl:justify-center'>
-							<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
-								<img src='/icons/startup.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
+							<div className='flex flex-row items-center gap-4 justify-start'>
+								<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
+									<img src='/icons/skill.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
+								</div>
+								<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Meningkatkan Keterampilan Talenta Digital Nusantara.</p>
 							</div>
-							<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Mendorong Lahirnya Startup Lokal yang Dapat Bersaing di Tingkat Nasional maupun Global.</p>
+							<div className='flex flex-row items-center gap-4 2xl:col-span-2 justify-start 2xl:justify-center'>
+								<div className='bg-gray-900 p-4 rounded-3xl text-[#D7AB6C] shrink-0'>
+									<img src='/icons/startup.svg' alt='' className='w-10 md:w-16 2xl:w-20' />
+								</div>
+								<p className='text-sm md:text-lg xl:text-2xl font-medium text-gray-900'>Mendorong Lahirnya Startup Lokal yang Dapat Bersaing di Tingkat Nasional maupun Global.</p>
+							</div>
 						</div>
-					</div>
-				</main>
-			</section>
+					</main>
+				</section>
+			</div>
 			<section id='article' className='bg-zinc-50 py-12 md:py-32 xl:py-40'>
 				<main className='px-6 md:px-16 2xl:px-40'>
 					<h1 className='mb-10 md:mb-20 text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center'>Artikel</h1>
@@ -81,7 +84,7 @@ export default function Home() {
 								<p className='uppercase text-sm md:text-lg xl:text-2xl text-[#D7AB6C] font-semibold'>Artikel Lainnya</p>
 								<hr className='w-6 md:w-12 h-1 bg-[#D7AB6C] mb-4' />
 							</div>
-							<div className='flex flex-col gap-6 group'>
+							<Link href='#' className='flex flex-col gap-6 group'>
 								<div className='bg-gray-300 w-full 2xl:max-w-4xl rounded-3xl relative overflow-hidden mb-4'>
 									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
 									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
@@ -100,103 +103,109 @@ export default function Home() {
 									itaque obcaecati aperiam molestias laboriosam non.
 								</p>
 								<div className='flex flex-row gap-4 items-center'>
-									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
 										<p>Tech Talk</p>
 									</div>
-									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
+									<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
 										<p>AI</p>
 									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<div className='flex flex-col gap-16 md:gap-8'>
-							<div className='flex flex-col md:flex-row gap-6 w-full group'>
-								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
-									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
-									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-										<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
-									</div>
-								</div>
-								<div className='flex flex-col gap-4'>
-									<p className='text-xs md:text-sm xl:text-lg'>
-										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
-									</p>
-									<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-										eligendi suscipit. Eum, quo.
-									</h1>
-									<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-										aperiam laudantium neque expedita?
-									</p>
-									<div className='flex flex-row gap-4 items-center'>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>Tech Talk</p>
-										</div>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>AI</p>
+							<div>
+								<Link href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+									<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
+										<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
 										</div>
 									</div>
-								</div>
-							</div>		
-							<div className='flex flex-col md:flex-row gap-6 w-full group'>
-								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
-									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
-									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-										<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
-									</div>
-								</div>
-								<div className='flex flex-col gap-4'>
-									<p className='text-xs md:text-sm xl:text-lg'>
-										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
-									</p>
-									<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-										eligendi suscipit. Eum, quo.
-									</h1>
-									<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-										aperiam laudantium neque expedita?
-									</p>
-									<div className='flex flex-row gap-4 items-center'>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>Tech Talk</p>
-										</div>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>AI</p>
+									<div className='flex flex-col gap-4'>
+										<p className='text-xs md:text-sm xl:text-lg'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+										<div className='flex flex-row gap-4 items-center'>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>Tech Talk</p>
+											</div>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>AI</p>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>		
-							<div className='flex flex-col md:flex-row gap-6 w-full group'>
-								<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
-									<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
-									<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-										<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
-									</div>
-								</div>
-								<div className='flex flex-col gap-4'>
-									<p className='text-xs md:text-sm xl:text-lg'>
-										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
-									</p>
-									<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-										eligendi suscipit. Eum, quo.
-									</h1>
-									<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-										aperiam laudantium neque expedita?
-									</p>
-									<div className='flex flex-row gap-4 items-center'>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>Tech Talk</p>
-										</div>
-										<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'>
-											<p>AI</p>
+								</Link>
+							</div>
+							<div>
+								<Link href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+									<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
+										<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
 										</div>
 									</div>
-								</div>
-							</div>		
+									<div className='flex flex-col gap-4'>
+										<p className='text-xs md:text-sm xl:text-lg'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+										<div className='flex flex-row gap-4 items-center'>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>Tech Talk</p>
+											</div>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>AI</p>
+											</div>
+										</div>
+									</div>
+								</Link>
+							</div>
+							<div>
+								<Link href='#' className='flex flex-col md:flex-row gap-6 w-full group'>
+									<div className='bg-gray-100 w-full md:max-w-sm lg:max-w-lg xl:max-w-2xl 2xl:max-w-xs rounded-3xl relative overflow-hidden mb-4'>
+										<img src={'/img/Test.jpg'} alt='nds' className='w-full h-full object-cover' />
+										<div className='absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+											<p className='text-white text-md font-bold'>Baca Selengkapnya</p>
+										</div>
+									</div>
+									<div className='flex flex-col gap-4'>
+										<p className='text-xs md:text-sm xl:text-lg'>
+											21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
+										</p>
+										<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-2 leading-relaxed md:leading-tight max-w-xl group-hover:underline group-hover:underline-offset-4'>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae
+											natus eligendi suscipit. Eum, quo.
+										</h1>
+										<p className='visible 2xl:hidden text-sm md:text-md xl:text-xl font-medium md:max-w-[27rem] line-clamp-2 tracking-wide leading-normal lg:leading-loose'>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis
+											laborum aperiam laudantium neque expedita?
+										</p>
+										<div className='flex flex-row gap-4 items-center'>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>Tech Talk</p>
+											</div>
+											<div className='bg-gray-800 hover:bg-gray-900 px-4 py-1 text-xs md:text-sm xl:text-lg text-white hover:shadow-md duration-300 rounded-full'>
+												<p>AI</p>
+											</div>
+										</div>
+									</div>
+								</Link>
+							</div>
 						</div>
 					</div>
 					<div className='flex justify-center items-center'>
@@ -207,7 +216,7 @@ export default function Home() {
 			<section id='event' className='py-12 md:py-32 xl:py-40'>
 				<main className='px-6 md:px-16 2xl:px-40'>
 					<h1 className='mb-10 md:mb-20 text-2xl md:text-4xl xl:text-6xl font-bold text-gray-900 text-center'>Event</h1>
-					<div className='flex flex-col 2xl:flex-row gap-y-16 2xl:gap-x-8 justify-center 2xl:justify-start items-center 2xl:items-start'>
+					<div className='flex flex-col 2xl:flex-row gap-y-16 2xl:gap-x-8 justify-center items-center'>
 						<div className='bg-gray-300 w-full 2xl:max-w-4xl rounded-3xl overflow-hidden'>
 							<img src={'/img/event.jpg'} alt='nds' className='w-full h-full object-cover' />
 						</div>
@@ -218,11 +227,27 @@ export default function Home() {
 									<hr className='w-12 h-1 bg-[#D7AB6C] mb-4' />
 								</div>
 								<h1 className='text-xl md:text-2xl xl:text-4xl font-bold line-clamp-3 leading-relaxed md:leading-tight'>NVIDIA Campus Roadshow Balikpapan 2024</h1>
-								<p className='text-sm md:text-md xl:text-xl font-medium line-clamp-3 tracking-wide leading-relaxed md:leading-loose'>NVIDIA Powers the World&apos;s AI. And Yours.</p>
+								<p className='text-sm md:text-md xl:text-xl font-medium line-clamp-6 tracking-wide leading-relaxed md:leading-loose'>NVIDIA Powers the World&apos;s AI. And Yours.</p>
 							</div>
 							<div className='flex flex-col gap-4'>
-								<p className='text-sm md:text-md xl:text-xl font-medium line-clamp-3 tracking-wide leading-loose'>Location</p>
-								<p className='text-sm md:text-md xl:text-xl font-medium line-clamp-3 tracking-wide leading-loose'>Date</p>
+								<div className='flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'>
+									<div className='p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'>
+										<MapPin className='w-8 h-8 text-[#D7AB6C]' />
+									</div>
+									<div>
+										<p className='text-sm font-semibold text-gray-500'>Location</p>
+										<p className='text-base md:text-xl font-medium'>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
+									</div>
+								</div>
+								<div className='flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'>
+									<div className='p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'>
+										<Calendar className='w-8 h-8 text-[#D7AB6C]' />
+									</div>
+									<div>
+										<p className='text-sm font-semibold text-gray-500'>Date</p>
+										<p className='text-base md:text-xl font-medium'>December 19, 2024</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
