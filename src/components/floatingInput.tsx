@@ -29,7 +29,7 @@ export default function FloatingLabelInput({
         htmlFor={id}
         className={`absolute left-2 transition-all duration-300 ${
           isFocused || value || example
-            ? '-top-3 bg-[#f9f2e9] text-sm text-blue-500 bg-primary px-2'
+            ? '-top-3 bg-[#f9f2e9] text-sm text-[#D7AB6C] bg-primary px-2'
             : 'top-2 text-gray-900'
         }`}
         style={{
@@ -54,9 +54,8 @@ export default function FloatingLabelInput({
           }
           setExample(e.target.value);
         }}
-        className={`border-0 border-b-2  focus:border-blue-500  border-black bg-transparent placeholder-transparent py-2 pl-4 w-full
+        className={`border-0 border-b-2  focus:outline-[#D7AB6C] border-black bg-transparent placeholder-transparent py-2 pl-4 w-full
           (isFocused || value || example) && ''`}
-        placeholder="Nama Lengkap"
         disabled={disabled}
         required={required}
       />

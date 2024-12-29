@@ -17,11 +17,11 @@ const Button: React.FC<ButtonProps> = ({
 	onClick,
 	disabled = false,
 }) => {
-	const baseStyles = 'text-sm md:text-md xl:text-xl font-medium rounded-lg px-4 py-2 transition duration-300';
+	const baseStyles = 'text-sm md:text-md xl:text-xl font-medium px-6 py-3 transition duration-300 shadow-md';
 
 	const variants = {
-		primary: 'bg-[#D7AB6C] text-gray-100 hover:bg-gray-900 hover:text-[#D7AB6C]',
-		secondary: 'bg-gray-800 text-[#D7AB6C] hover:bg-gray-900',
+		primary: 'bg-white text-gray-900 hover:text-[#D7AB6C]',
+		secondary: 'bg-[#D7AB6C] hover:bg-gray-900 text-gray-100 hover:text-[#D7AB6C]',
 		outline: 'border-4 border-[#D7AB6C] text-[#D7AB6C] hover:bg-[#D7AB6C] hover:text-white',
 		danger: 'bg-red-500 text-white hover:bg-red-700',
 	};

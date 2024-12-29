@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import { NdsHorizontalSvg } from '../../public/img/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-50 py-12 md:py-32">
+    <footer className="bg-zinc-50 py-12">
       <section id="contact" className="px-6 md:px-16 2xl:px-40">
         <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
           <Image
-            src={NdsHorizontalSvg}
+            src={'/img/nds-horizontal-logo.svg'}
             alt="nds"
+            width={0} height={0}
             className="w-36 xl:w-52 h-auto "
           />
           <p className="text-xs md:text-md xl:text-lg font-medium line-clamp-3 tracking-wide leading-loose">
