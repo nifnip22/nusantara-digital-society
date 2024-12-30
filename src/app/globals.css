@@ -3,12 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.shining-text {
+	background-image: linear-gradient(90deg, #d7ab6c 0%, rgba(215, 171, 108, 0.4) 50%, #d7ab6c 100%);
+	background-size: 200%;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 5s linear infinite, pause-animation 20s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes pause-animation {
+  0%, 30% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
