@@ -9,9 +9,9 @@ export default function Footer() {
             src={'/img/nds-horizontal-logo.svg'}
             alt={'NDS Logo'}
             width={0} height={0}
-            className={'w-36 xl:w-52 h-auto'}
+            className={'w-36 xl:w-54 h-auto'}
           />
-          <p className={'text-xs md:text-md xl:text-lg font-medium line-clamp-3 tracking-wide leading-loose'}>
+          <p className={'text-xs md:text-md font-medium line-clamp-3 tracking-wide leading-loose'}>
             &copy; 2024 Nusantara Digital Society. All Rights Reserved.
           </p>
         </div>
