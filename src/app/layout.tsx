@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Open_Sans } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 
-const openSans = Open_Sans({
-  variable: '--font-open-sans',
+const font = Plus_Jakarta_Sans({
+  variable: '--font-default',
   subsets: ['latin'],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>{children}</body>
+      <body className={`${font.variable} antialiased`}>{children}</body>
     </html>
   );
 }
