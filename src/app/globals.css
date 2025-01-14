@@ -41,7 +41,7 @@ body {
 }
 
 .article-carousel::-webkit-scrollbar {
-  height: 6px;
+  height: 7px;
 }
 
 .article-carousel::-webkit-scrollbar-thumb {
@@ -50,6 +50,7 @@ body {
 }
 
 .article-carousel::-webkit-scrollbar-thumb:hover {
+  height: 8px;
   background-color: #ac8857; 
 }
 

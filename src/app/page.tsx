@@ -5,7 +5,7 @@ import Form from 'next/form';
 import FloatingLabelInput from '@/components/floatingInput';
 import { JoinUsInput } from '@/etc/constant';
 import Link from 'next/link';
-import { Calendar, Eye, MapPin } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, Eye, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
@@ -24,7 +24,9 @@ export default function Home() {
 						</div>
 						<div className={'flex gap-4 justify-center items-center'}>
 							<Button label={'About Us'} type={'button'} variant={'primary'} className={'rounded-full'}></Button>
-							<Button label={'Join Us'} type={'button'} variant={'dark'} className={'rounded-full'}></Button>
+							<Link href={'#join-us'}>
+								<Button label={'Join Us'} type={'button'} variant={'dark'} className={'rounded-full'}></Button>
+							</Link>
 						</div>
 					</main>
 					<main className={'px-6 md:px-16 2xl:px-40 mt-32 absolute -translate-y-12'}>
@@ -41,7 +43,7 @@ export default function Home() {
 							<div className={'flex flex-col lg:flex-row justify-center items-start gap-16 lg:gap-32 w-full'}>
 								<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start gap-6 w-full lg:w-1/2'}>
 									<div className={'bg-[#f9f2e9] p-4 rounded-3xl text-[#D7AB6C] shrink-0'}>
-										<img src={'/icons/connect.svg'} alt={'Connect Icon'} className={'w-10 md:w-16 2xl:w-20'} />
+										<Image src={'/icons/connect.svg'} alt={'Connect Icon'} width={1500} height={1500} className={'w-10 md:w-16 2xl:w-20'} />
 									</div>
 									<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start text-center lg:text-start gap-4'}>
 										<h1 className={'text-xl md:text-2xl xl:text-3xl font-medium'}>Connect</h1>
@@ -50,7 +52,7 @@ export default function Home() {
 								</div>
 								<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start gap-6 w-full lg:w-1/2'}>
 									<div className={'bg-[#f9f2e9] p-4 rounded-3xl text-[#D7AB6C] shrink-0'}>
-										<img src={'/icons/skill.svg'} alt={'Skill Icon'} className={'w-10 md:w-16 2xl:w-20'} />
+										<Image src={'/icons/skill.svg'} alt={'Skill Icon'} width={1500} height={1500} className={'w-10 md:w-16 2xl:w-20'} />
 									</div>
 									<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start text-center lg:text-start gap-4'}>
 										<h1 className={'text-xl md:text-2xl xl:text-3xl font-medium'}>Upgrade</h1>
@@ -59,7 +61,7 @@ export default function Home() {
 								</div>
 								<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start gap-6 w-full lg:w-1/2'}>
 									<div className={'bg-[#f9f2e9] p-4 rounded-3xl text-[#D7AB6C] shrink-0'}>
-										<img src={'/icons/startup.svg'} alt={'Startup Icon'} className={'w-10 md:w-16 2xl:w-20'} />
+										<Image src={'/icons/startup.svg'} alt={'Startup Icon'} width={1500} height={1500} className={'w-10 md:w-16 2xl:w-20'} />
 									</div>
 									<div className={'flex flex-col justify-center items-center lg:justify-start lg:items-start text-center lg:text-start gap-4'}>
 										<h1 className={'text-xl md:text-2xl xl:text-3xl font-medium'}>Push</h1>
@@ -79,7 +81,7 @@ export default function Home() {
 					</div>
 					<div className={'mb-72 md:mb-52 relative'}>
 						<div className={'xl:pl-52'}>
-							<img src={'/img/Test.jpg'} alt={'Terbaru'} className={'w-full h-auto rounded-3xl'} />
+							<Image src={'/img/Test.jpg'} alt={'Terbaru'} width={1500} height={1500} className={'w-full h-auto rounded-3xl'} />
 						</div>
 						<Link
 							href={'#'}
@@ -89,18 +91,24 @@ export default function Home() {
 							<div className={'z-2'}>
 								<p className={'uppercase text-sm md:text-lg xl:text-xl font-semibold tracking-wide'}>Terbaru</p>
 								<hr className={'w-6 md:w-12 h-1 bg-white mb-4'} />
-								<h2 className={'mt-2 mb-4 text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-wide leading-tight'}>NVIDIA Campus Roadshow 2024 Universitas Mulia</h2>
+								<h2 className={'mt-2 mb-4 text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-wide leading-relaxed'}>NVIDIA Campus Roadshow 2024 Universitas Mulia</h2>
 								<p className={'text-base md:text-md xl:text-lg font-medium max-w-[50rem] line-clamp-2 tracking-wide leading-relaxed'}>
 									NVIDIA Campus Roadshow 2024 Sukses Diselenggarakan di Universitas Mulia Balikpapan Bekerja Sama dengan Bitracom Gaming pada Hari Kamis (19/12/2024) Kemarin.
 								</p>
 								<p className={'opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-md font-semibold text-white-500 hover:text-white-400 after:content-["_→"]'}>Baca Selengkapnya</p>
 							</div>
-							<img src={'/img/nds-branch.svg'} className={'absolute w-72 -translate-x-full -translate-y-1/2 top-3/4 left-full z-1 opacity-0 group-hover:opacity-30 duration-300'} />
+							<Image src={'/img/nds-branch.svg'} alt={''} width={1500} height={1500} className={'absolute w-72 -translate-x-full -translate-y-1/2 top-3/4 left-full z-1 opacity-0 group-hover:opacity-30 duration-300'} />
 						</Link>
 					</div>
-					<div className={'mb-4'}>
-						<p className={'uppercase text-sm md:text-lg xl:text-xl text-[#D7AB6C] font-semibold'}>Artikel Lainnya</p>
-						<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
+					<div className={'mb-4 flex flex-row justify-between items-center'}>
+						<div>
+							<p className={'uppercase text-sm md:text-lg xl:text-xl text-[#D7AB6C] font-semibold'}>Artikel Lainnya</p>
+							<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
+						</div>
+						<div className='flex flex-row items-center gap-4'>
+							<ChevronLeft size={30} />
+							<ChevronRight size={30} />
+						</div>
 					</div>
 					<div className={'article-carousel w-full flex flex-row gap-6 justify-start items-start overflow-x-auto snap-x snap-mandatory scroll-smooth mb-20'}>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
@@ -111,14 +119,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -140,14 +148,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -169,14 +177,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -198,14 +206,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -218,7 +226,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-						</Link>		
+						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
@@ -227,14 +235,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -247,7 +255,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-						</Link>		
+						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
@@ -256,14 +264,14 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed md:leading-tight group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed lg:leading-loose'}>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
 									aperiam laudantium neque expedita?
 								</p>
@@ -276,10 +284,12 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-						</Link>		
+						</Link>
 					</div>
 					<div className={'flex justify-center items-center'}>
-						<Button label={'Lihat Semua Artikel'} type={'button'} variant={'primary'} className={'rounded-full after:content-["_→"]'} />
+						<Link href={'/artikel'}>
+							<Button label={'Lihat Semua Artikel'} type={'button'} variant={'primary'} className={'rounded-full after:content-["_→"]'} />
+						</Link>
 					</div>
 				</main>
 			</section>
@@ -291,7 +301,7 @@ export default function Home() {
 					</div>
 					<div className={'flex flex-col 2xl:flex-row gap-y-16 2xl:gap-x-8 justify-center items-center'}>
 						<div className={'bg-gray-300 aspect-square w-full 2xl:max-w-4xl rounded-3xl overflow-hidden'}>
-							<img src={'/img/event.jpg'} alt={'Event'} className={'w-full h-full object-cover'} />
+							<Image src={'/img/event.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 						<div className={'flex flex-col justify-between gap-8 w-full 2xl:max-w-4xl h-auto'}>
 							<div className={'flex flex-col gap-4'}>
@@ -333,11 +343,11 @@ export default function Home() {
 					</div>
 				</main>
 			</section>
-			<section id={'joinUs'} className={'bg-[#f9f2e9]'}>
+			<section id={'join-us'} className={'bg-[#f9f2e9]'}>
 				<main>
 					<div className={'flex flex-col lg:flex-row items-center'}>
 						<div className={'w-full max-w-6xl lg:h-screen overflow-hidden'}>
-							<img src={'/img/Test.jpg'} alt={'Join Us'} className={'w-full h-full object-cover'} />
+							<Image src={'/img/Test.jpg'} alt={'Join Us'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 						<div className={'max-w-6xl flex flex-col gap-8 py-20 lg:py-0 pl-4 md:pl-8 pr-6 md:pr-16 2xl:pr-40'}>
 							<h1 className={'text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900'}>Join Us</h1>
