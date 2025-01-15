@@ -112,8 +112,8 @@ export default function Home() {
 					</div>
 					<div className={'article-carousel w-full flex flex-row gap-6 justify-start items-start overflow-x-auto snap-x snap-mandatory scroll-smooth mb-20'}>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
 									<Eye size={40} color={'#ffffff'} />
 								</div>
@@ -122,7 +122,7 @@ export default function Home() {
 								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
@@ -141,8 +141,8 @@ export default function Home() {
 							</div>
 						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
 									<Eye size={40} color={'#ffffff'} />
 								</div>
@@ -151,7 +151,7 @@ export default function Home() {
 								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
@@ -170,8 +170,8 @@ export default function Home() {
 							</div>
 						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
 									<Eye size={40} color={'#ffffff'} />
 								</div>
@@ -180,7 +180,7 @@ export default function Home() {
 								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
@@ -199,8 +199,8 @@ export default function Home() {
 							</div>
 						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
 									<Eye size={40} color={'#ffffff'} />
 								</div>
@@ -209,7 +209,7 @@ export default function Home() {
 								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>
@@ -228,8 +228,8 @@ export default function Home() {
 							</div>
 						</Link>
 						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
 									<Eye size={40} color={'#ffffff'} />
 								</div>
@@ -238,7 +238,36 @@ export default function Home() {
 								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
 									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
 								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
+									eligendi suscipit. Eum, quo.
+								</h1>
+								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
+									aperiam laudantium neque expedita?
+								</p>
+								<div className={'flex flex-row gap-4 items-center'}>
+									<div className={'bg-[#f9f2e9] px-4 py-1 text-xs md:text-sm xl:text-md text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'}>
+										<p>Tech Talk</p>
+									</div>
+									<div className={'bg-[#f9f2e9] px-4 py-1 text-xs md:text-sm xl:text-md text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'}>
+										<p>AI</p>
+									</div>
+								</div>
+							</div>
+						</Link>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
+							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
+								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
+								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
+									<Eye size={40} color={'#ffffff'} />
+								</div>
+							</div>
+							<div className={'flex flex-col gap-4'}>
+								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
+									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
+								</p>
+								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
 									eligendi suscipit. Eum, quo.
 								</h1>

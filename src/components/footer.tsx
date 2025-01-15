@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={'bg-zinc-50 py-12'}>
       <main className={'px-6 md:px-16 2xl:px-40'}>
-        <div className={'flex flex-col md:flex-row gap-4 justify-between items-center'}>
+        <div className={'flex flex-col md:flex-row gap-4 justify-between items-center text-center'}>
           <Image
             src={'/img/nds-horizontal-logo.svg'}
             alt={'NDS Logo'}
