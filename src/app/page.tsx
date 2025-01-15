@@ -16,7 +16,7 @@ export default function Home() {
 				<Image src={'/icons/circle.svg'} alt='' width={2000} height={2000} className={'absolute overflow-hidden translate-x-1/4 -translate-y-1/2 opacity-20 z-[0]'} />
 				<section id={'home'} className={'z-10 relative pt-12 pb-[48rem] md:pb-[54rem] md:pt-28 lg:pb-[28rem] xl:pb-[34rem] xl:pt-20'}>
 					<main className={'px-6 md:px-10 2xl:px-28'}>
-						<div className='flex flex-col gap-2 text-center text-6xl md:text-7xl lg:text-8xl font-bold mb-12'>
+						<div className='flex flex-col gap-2 text-center text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-snug mb-12'>
 							<h1>Empowering Innovation</h1>
 							<p>
 								Advancing <span className='shining-text text-[#D7AB6C]'>Nusantara</span>
@@ -73,7 +73,7 @@ export default function Home() {
 					</main>
 				</section>
 			</div>
-			<section id={'article'} className={'bg-zinc-50 pt-[56rem] sm:pt-[70rem] pb-20 md:pt-[60rem] md:pb-32 lg:pt-[36rem] xl:pt-[40rem] xl:pb-40'}>
+			<section id={'article'} className={'bg-zinc-50 pt-[62rem] sm:pt-[70rem] pb-20 md:pt-[60rem] md:pb-32 lg:pt-[36rem] xl:pt-[40rem] xl:pb-40'}>
 				<main className={'px-6 md:px-16 2xl:px-40'}>
 					<div className={'mb-10 md:mb-20 text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 flex flex-col justify-center items-center gap-4'}>
 						<hr className={'w-16 h-3 bg-[#D7AB6C] rounded-full'} />
@@ -111,7 +111,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={'article-carousel w-full flex flex-row gap-6 justify-start items-start overflow-x-auto snap-x snap-mandatory scroll-smooth mb-20'}>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -140,7 +140,7 @@ export default function Home() {
 								</div>
 							</div>
 						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -169,7 +169,7 @@ export default function Home() {
 								</div>
 							</div>
 						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -198,7 +198,7 @@ export default function Home() {
 								</div>
 							</div>
 						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -227,36 +227,7 @@ export default function Home() {
 								</div>
 							</div>
 						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
-							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm xl:text-md tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-2 tracking-wide leading-relaxed'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-								<div className={'flex flex-row gap-4 items-center'}>
-									<div className={'bg-[#f9f2e9] px-4 py-1 text-xs md:text-sm xl:text-md text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'}>
-										<p>Tech Talk</p>
-									</div>
-									<div className={'bg-[#f9f2e9] px-4 py-1 text-xs md:text-sm xl:text-md text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'}>
-										<p>AI</p>
-									</div>
-								</div>
-							</div>
-						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[360px] group'>
+						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 							<div className='bg-gray-100 rounded-3xl relative overflow-hidden mb-4'>
 								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -318,7 +289,7 @@ export default function Home() {
 										<MapPin className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
-										<p className={'text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
+										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
 										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
 									</div>
 								</div>
@@ -327,8 +298,8 @@ export default function Home() {
 										<Calendar className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
-										<p className={'text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium'}>19 Desember 2024 - 14:00 WITA</p>
+										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>19 Desember 2024 - 14:00 WITA</p>
 									</div>
 								</div>
 							</div>

@@ -1,22 +1,25 @@
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
-import { ChevronRight } from 'lucide-react';
+import Button from '@/components/ui/Button';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Artikel() {
 	return (
 		<div className='font-geist-sans overflow-x-hidden'>
-			<main className=''>
+			<main>
 				<Navbar />
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
-					<div className='mb-4'>
-						<p className={'uppercase text-sm md:text-lg xl:text-xl text-[#D7AB6C] font-semibold'}>Artikel Terkait</p>
-						<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
+					<div className={'mb-12 text-gray-900 flex flex-col justify-center items-center text-center sm:justify-start sm:items-start gap-4'}>
+						<h1 className='text-4xl md:text-5xl xl:text-6xl font-bold'>Artikel</h1>
+						<p className='text-xs md:text-md xl:text-lg'>Jelajahi wawasan, aktivitas, dan pembaruan dari komunitas Nusantara Digital Society</p>
 					</div>
-					<div className='relative flex flex-col-reverse lg:flex-row gap-4 justify-between h-full'>
-						<div className='w-3/4 flex flex-col gap-12'>
-							<div className='flex flex-row gap-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'max-w-xs h-auto rounded-3xl'} />
+					<div className='relative flex flex-col-reverse lg:flex-row gap-x-4 gap-y-8 justify-between items-start'>
+						<div className='w-full lg:w-3/4 flex flex-col gap-12'>
+							<div className='flex flex-col sm:flex-row gap-4'>
+								<div className='bg-zinc-300 w-full sm:min-w-[300px] rounded-3xl overflow-hidden'>
+									<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'object-cover w-full h-full'} />
+								</div>
 								<div className='flex flex-col gap-4'>
 									<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
 										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
@@ -39,8 +42,10 @@ export default function Artikel() {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-row gap-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'max-w-xs h-auto rounded-3xl'} />
+							<div className='flex flex-col sm:flex-row gap-4'>
+								<div className='bg-zinc-300 w-full sm:min-w-[300px] rounded-3xl overflow-hidden'>
+									<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'object-cover w-full h-full'} />
+								</div>
 								<div className='flex flex-col gap-4'>
 									<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
 										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
@@ -63,8 +68,10 @@ export default function Artikel() {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-row gap-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'max-w-xs h-auto rounded-3xl'} />
+							<div className='flex flex-col sm:flex-row gap-4'>
+								<div className='bg-zinc-300 w-full sm:min-w-[300px] rounded-3xl overflow-hidden'>
+									<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'object-cover w-full h-full'} />
+								</div>
 								<div className='flex flex-col gap-4'>
 									<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
 										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
@@ -87,8 +94,10 @@ export default function Artikel() {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-row gap-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'max-w-xs h-auto rounded-3xl'} />
+							<div className='flex flex-col sm:flex-row gap-4'>
+								<div className='bg-zinc-300 w-full sm:min-w-[300px] rounded-3xl overflow-hidden'>
+									<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'object-cover w-full h-full'} />
+								</div>
 								<div className='flex flex-col gap-4'>
 									<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
 										21 Desember 2024 - by <span className='text-[#D7AB6C]'>Admin</span>
@@ -111,7 +120,10 @@ export default function Artikel() {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-row gap-2 items-center'>
+							<div className='flex flex-row gap-2 justify-center sm:justify-start items-center'>
+								<div className='hover:bg-zinc-100 transform duration-300 w-10 h-10 rounded-full flex justify-center items-center'>
+									<ChevronLeft color='#D7AB6C' />
+								</div>
 								<div className='bg-[#D7AB6C] w-10 h-10 rounded-full flex justify-center items-center'>
 									<p className='text-gray-100 text-md font-semibold'>1</p>
 								</div>
@@ -125,29 +137,30 @@ export default function Artikel() {
 									<p className='text-gray-900 text-md'>4</p>
 								</div>
 								<div className='hover:bg-zinc-100 transform duration-300 w-10 h-10 rounded-full flex justify-center items-center'>
+									<p className='text-gray-900 text-md'>5</p>
+								</div>
+								<div className='hover:bg-zinc-100 transform duration-300 w-10 h-10 rounded-full flex justify-center items-center'>
 									<ChevronRight color='#D7AB6C' />
 								</div>
 							</div>
 						</div>
-						<div className='sticky top-20 w-1/2 h-fit'>
+						<div className='lg:sticky lg:top-20 w-full lg:w-[40%]'>
 							<div className='flex flex-col gap-6'>
-								<input type='text' className='w-full px-4 py-2 text-base rounded-full bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:ring-[#D7AB6C]' placeholder='Cari artikel...' />
-								<div className='flex flex-col gap-4'>
+								<div className='flex flex-row gap-2'>
+									<input type='text' className='w-full px-4 py-2 text-base rounded-full bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:ring-[#D7AB6C]' placeholder='Cari artikel...' />
+									<Button label='Filter' variant='primary' className='lg:hidden rounded-full'></Button>
+								</div>
+								<div className='hidden lg:flex flex-col gap-4'>
 									<p className='text-md font-medium'>Filter</p>
 									<div className='w-full flex flex-row items-center gap-2'>
 										<select name='filter' id='filter' className='w-full px-4 py-2 text-base rounded-full bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:ring-[#D7AB6C]'>
 											<option value='terbaru'>Terbaru</option>
 											<option value='terlama'>Terlama</option>
 										</select>
-										<select name='filter' id='filter' className='w-full px-4 py-2 text-base rounded-full bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:ring-[#D7AB6C]'>
-											<option value='none'>Bulan</option>
-											<option value='all'>Januari</option>
-											<option value='all'>Februari</option>
-											<option value='all'>Maret</option>
-										</select>
+										<input type='date' id='filter' name='filter' className='w-full px-4 py-2 text-base rounded-full bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:ring-[#D7AB6C]' />
 									</div>
 								</div>
-								<div className='flex flex-col gap-4'>
+								<div className='hidden lg:flex flex-col gap-4'>
 									<p className='text-md font-medium'>Kategori</p>
 									<div className='flex flex-wrap gap-4 items-center'>
 										<div className={'bg-[#f9f2e9] px-4 py-1 text-xs md:text-sm xl:text-md text-[#D7AB6C] hover:shadow-md duration-300 rounded-full'}>
@@ -182,9 +195,6 @@ export default function Artikel() {
 										</div>
 										<div className={'bg-zinc-100 px-4 py-1 text-xs md:text-sm xl:text-md text-gray-900 hover:shadow-md duration-300 rounded-full'}>
 											<p>Mobile Dev</p>
-										</div>
-										<div className={'bg-zinc-100 px-4 py-1 text-xs md:text-sm xl:text-md text-gray-900 hover:shadow-md duration-300 rounded-full'}>
-											<p>Open Source</p>
 										</div>
 										<div className={'bg-zinc-100 px-4 py-1 text-xs md:text-sm xl:text-md text-gray-900 hover:shadow-md duration-300 rounded-full'}>
 											<p>Programming Tips</p>
