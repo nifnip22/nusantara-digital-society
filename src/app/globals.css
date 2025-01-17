@@ -13,31 +13,9 @@ body {
 	font-family: var(--font-default), Arial, Helvetica, sans-serif
 }
 
-.shining-text {
-	background-image: linear-gradient(90deg, #d7ab6c 0%, rgba(215, 171, 108, 0.4) 50%, #d7ab6c 100%);
-	background-size: 200%;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: shine 5s linear infinite, pause-animation 20s linear infinite;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 200% center;
-  }
-  100% {
-    background-position: -200% center;
-  }
-}
-
-@keyframes pause-animation {
-  0%, 30% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+::selection {
+  color: white; /* Warna teks */
+  background-color: #d7ab6c; /* Warna latar belakang highlight */
 }
 
 .article-carousel::-webkit-scrollbar {

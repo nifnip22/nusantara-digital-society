@@ -19,7 +19,7 @@ export default function Home() {
 						<div className='flex flex-col gap-2 text-center text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-snug mb-12'>
 							<h1>Empowering Innovation</h1>
 							<p>
-								Advancing <span className='shining-text text-[#D7AB6C]'>Nusantara</span>
+								Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
 							</p>
 						</div>
 						<div className={'flex gap-4 justify-center items-center'}>
