@@ -10,8 +10,8 @@ export default function Artikel() {
 				<Navbar />
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12 mb-8'>
 					<div className={'text-gray-900 flex flex-col justify-center items-center text-center sm:justify-start sm:items-start gap-4'}>
-						<h1 className='text-4xl md:text-5xl xl:text-6xl font-bold'>Artikel</h1>
-						<p className='text-xs md:text-md xl:text-lg'>Jelajahi wawasan, aktivitas, dan pembaruan dari komunitas Nusantara Digital Society</p>
+						<h1 className='text-4xl md:text-5xl font-bold'>Artikel</h1>
+						<p className='text-xs md:text-md'>Jelajahi wawasan, aktivitas, dan pembaruan dari komunitas Nusantara Digital Society</p>
 					</div>
 				</div>
 			</header>
