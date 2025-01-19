@@ -5,8 +5,9 @@ import Form from 'next/form';
 import FloatingLabelInput from '@/components/floatingInput';
 import { JoinUsInput } from '@/etc/constant';
 import Link from 'next/link';
-import { Calendar, ChevronLeft, ChevronRight, Eye, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import ArticleCarousel from '@/components/layouts/ArticleCarousel';
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 				<Image src={'/icons/circle.svg'} alt='' width={2000} height={2000} className={'absolute overflow-hidden translate-x-1/4 -translate-y-1/2 opacity-20 z-[0]'} />
 				<section id={'home'} className={'z-10 relative pt-12 pb-[48rem] md:pb-[54rem] md:pt-28 lg:pb-[28rem] xl:pb-[34rem] xl:pt-20'}>
 					<main className={'px-6 md:px-10 2xl:px-28'}>
-						<div className='flex flex-col gap-2 text-center text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-snug mb-12'>
+						<div className='flex flex-col text-center text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-snug mb-12'>
 							<h1>Empowering Innovation</h1>
 							<p>
 								Advancing <span className='text-[#D7AB6C]'>Nusantara</span>
@@ -100,123 +101,7 @@ export default function Home() {
 							<Image src={'/img/nds-branch.svg'} alt={''} width={1500} height={1500} className={'absolute w-72 -translate-x-full -translate-y-1/2 top-3/4 left-full z-1 opacity-0 group-hover:opacity-30 duration-300'} />
 						</Link>
 					</div>
-					<div className={'mb-4 flex flex-row justify-between items-center'}>
-						<div>
-							<p className={'uppercase text-md md:text-lg text-[#D7AB6C] font-semibold'}>Artikel Lainnya</p>
-							<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
-						</div>
-						<div className='flex flex-row items-center gap-4'>
-							<ChevronLeft size={30} />
-							<ChevronRight size={30} />
-						</div>
-					</div>
-					<div className={'article-carousel w-full flex flex-row gap-6 justify-start items-start overflow-x-auto snap-x snap-mandatory scroll-smooth mb-20'}>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-3 leading-relaxed tracking-normal'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-							</div>
-						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-3 leading-relaxed tracking-normal'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-							</div>
-						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-3 leading-relaxed tracking-normal'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-							</div>
-						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-3 leading-relaxed tracking-normal'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-							</div>
-						</Link>
-						<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
-							<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
-								<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
-								<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
-									<Eye size={40} color={'#ffffff'} />
-								</div>
-							</div>
-							<div className={'flex flex-col gap-4'}>
-								<p className={'text-xs md:text-sm tracking-wide leading-relaxed'}>
-									21 Desember 2024 - by <span className={'text-[#D7AB6C]'}>Admin</span>
-								</p>
-								<h1 className={'text-xl md:text-2xl font-bold line-clamp-2 leading-relaxed tracking-wide group-hover:underline group-hover:underline-offset-4 group-hover:decoration-[#D7AB6C]'}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia, nobis, unde ab dolorum fuga commodi quos tempore dolore molestiae vero corrupti labore reprehenderit repudiandae natus
-									eligendi suscipit. Eum, quo.
-								</h1>
-								<p className={'text-sm md:text-md font-medium line-clamp-3 leading-relaxed tracking-normal'}>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus, suscipit doloremque minima deserunt nisi dolor ab maxime itaque. Dolorem illum veritatis soluta, aliquam debitis laborum
-									aperiam laudantium neque expedita?
-								</p>
-							</div>
-						</Link>
-					</div>
+					<ArticleCarousel />
 					<div className={'flex justify-center items-center'}>
 						<Link href={'/artikel'}>
 							<Button label={'Lihat Semua Artikel'} type={'button'} variant={'primary'} className={'rounded-full after:content-["_→"]'} />
