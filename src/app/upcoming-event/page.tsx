@@ -10,8 +10,8 @@ export default function UpcomingEvent() {
 			<Navbar />
 			<main>
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
-					<div className='flex flex-row justify-between items-center gap-6 mb-20'>
-						<div className='flex flex-col gap-y-4'>
+					<div className='flex flex-col lg:flex-row justify-between items-center gap-6 mb-20'>
+						<div className='w-full flex flex-col gap-y-4'>
 							<div className='flex flex-col'>
 								<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming Event</p>
 								<hr className={'w-20 h-1 bg-[#D7AB6C]'} />
@@ -39,7 +39,7 @@ export default function UpcomingEvent() {
 							</div>
 							<Button label='Registrasi Sekarang' type={'button'} variant={'dark'} className={'rounded-full after:content-["_→"]'} />
 						</div>
-						<div className={'bg-gray-300 aspect-square w-full 2xl:max-w-lg rounded-3xl overflow-hidden'}>
+						<div className={'bg-gray-300 aspect-square w-full lg:max-w-sm xl:max-w-lg rounded-3xl overflow-hidden'}>
 							<Image src={'/img/event.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 					</div>
@@ -62,7 +62,7 @@ export default function UpcomingEvent() {
 						</div>
 						<div className='flex flex-col gap-y-4'>
 							<h2 className='text-xl md:text-2xl font-semibold'>Tamu Unggulan</h2>
-							<div className='grid grid-cols-4 justify-center gap-4'>
+							<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-x-4 gap-y-12'>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
 										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
@@ -70,6 +70,24 @@ export default function UpcomingEvent() {
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
 										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Narasumber</p>
+									</div>
+								</div>
+								<div className='flex flex-col gap-y-4'>
+									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
+										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='flex flex-col'>
+										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
+										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
+									</div>
+								</div>
+								<div className='flex flex-col gap-y-4'>
+									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
+										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='flex flex-col'>
+										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
+										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
 									</div>
 								</div>
 								<div className='flex flex-col gap-y-4'>

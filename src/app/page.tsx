@@ -96,7 +96,9 @@ export default function Home() {
 								<p className={'text-sm md:text-md font-medium w-full line-clamp-3 tracking-wide leading-relaxed'}>
 									NVIDIA Campus Roadshow 2024 Sukses Diselenggarakan di Universitas Mulia Balikpapan Bekerja Sama dengan Bitracom Gaming pada Hari Kamis (19/12/2024) Kemarin.
 								</p>
-								<p className={'opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-sm md:text-md font-semibold text-white-500 hover:text-white-400 after:content-["_→"]'}>Baca Selengkapnya</p>
+								<p className={'opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-sm md:text-md font-semibold text-white-500 hover:text-white-400 after:content-["_→"]'}>
+									Baca Selengkapnya
+								</p>
 							</div>
 							<Image src={'/img/nds-branch.svg'} alt={''} width={1500} height={1500} className={'absolute w-72 -translate-x-full -translate-y-1/2 top-3/4 left-full z-1 opacity-0 group-hover:opacity-30 duration-300'} />
 						</Link>
@@ -148,7 +150,9 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<Button label={'Lebih Detail'} type={'button'} variant={'outline'} className={'rounded-full after:content-["_→"]'} />
+								<Link href={'/upcoming-event'}>
+									<Button label={'Lebih Detail'} type={'button'} variant={'outline'} className={'w-full rounded-full after:content-["_→"]'} />
+								</Link>
 								<Button label='Registrasi Sekarang' type={'button'} variant={'dark'} className={'rounded-full after:content-["_→"]'} />
 							</div>
 						</div>
@@ -166,9 +170,7 @@ export default function Home() {
 						</div>
 						<div className={'max-w-6xl flex flex-col gap-8 py-20 lg:py-0 pl-4 md:pl-8 pr-6 md:pr-16 2xl:pr-40'}>
 							<h1 className={'text-4xl md:text-5xl font-bold text-gray-900'}>Join Us</h1>
-							<p className={'text-sm md:text-lg font-medium text-gray-900 leading-relaxed'}>
-								Bergabung dengan Komunitas Nusantara Digital Society dan Bersama Kita Tumbuhkan Ekosistem Digital dan Teknologi Nusantara
-							</p>
+							<p className={'text-sm md:text-lg font-medium text-gray-900 leading-relaxed'}>Bergabung dengan Komunitas Nusantara Digital Society dan Bersama Kita Tumbuhkan Ekosistem Digital dan Teknologi Nusantara</p>
 							<Form action={'#'} className={'flex gap-10 col-span-3'}>
 								<div className={'flex flex-col gap-12 w-full'}>
 									{JoinUsInput.map((input, index) => (
