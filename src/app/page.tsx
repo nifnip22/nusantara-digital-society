@@ -5,7 +5,7 @@ import Form from 'next/form';
 import FloatingLabelInput from '@/components/floatingInput';
 import { JoinUsInput } from '@/etc/constant';
 import Link from 'next/link';
-import { Calendar, MapPin } from 'lucide-react';
+import { Calendar, FileClock, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import ArticleCarousel from '@/components/layouts/ArticleCarousel';
 
@@ -127,7 +127,7 @@ export default function Home() {
 									<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming</p>
 									<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
 								</div>
-								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-3 leading-relaxed tracking-wide'}>FIKOM TECHNOFEST 2024</h1>
+								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide'}>FIKOM TECHNOFEST 2024</h1>
 							</div>
 							<div className={'flex flex-col gap-4'}>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -146,6 +146,15 @@ export default function Home() {
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
 										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 - 09:00 WITA</p>
+									</div>
+								</div>
+								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
+										<FileClock className={'w-8 h-8 text-[#D7AB6C]'} />
+									</div>
+									<div>
+										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>03 Februari 2025 - 23:59 WITA</p>
 									</div>
 								</div>
 							</div>

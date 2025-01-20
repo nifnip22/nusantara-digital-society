@@ -35,7 +35,7 @@ export default function DetailArtikel() {
 						</p>
 						<div className='w-full flex flex-row justify-between items-center gap-2'>
 							<hr className='w-full h-1 bg-[#D7AB6C]' />
-							<p className='text-sm text-gray-900/60 font-medium whitespace-nowrap'>Akhir dari Artikel</p>
+							<p className='text-sm md:text-md text-gray-900/60 font-medium whitespace-nowrap'>Akhir dari Artikel</p>
 							<hr className='w-full h-1 bg-[#D7AB6C]' />
 						</div>
 					</div>

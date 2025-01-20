@@ -1,7 +1,7 @@
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import Button from '@/components/ui/Button';
-import { Calendar, MapPin } from 'lucide-react';
+import { Calendar, FileClock, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 export default function UpcomingEvent() {
@@ -14,7 +14,7 @@ export default function UpcomingEvent() {
 						<div className='w-full flex flex-col gap-y-4'>
 							<div className='flex flex-col'>
 								<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming Event</p>
-								<hr className={'w-20 h-1 bg-[#D7AB6C]'} />
+								<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
 							</div>
 							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>FIKOM TECHNOFEST 2024</h1>
 							<div className={'flex flex-col gap-4'}>
@@ -34,6 +34,15 @@ export default function UpcomingEvent() {
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
 										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 - 09:00 WITA</p>
+									</div>
+								</div>
+								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
+										<FileClock className={'w-8 h-8 text-[#D7AB6C]'} />
+									</div>
+									<div>
+										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>03 Februari 2025 - 23:59 WITA</p>
 									</div>
 								</div>
 							</div>
@@ -60,6 +69,7 @@ export default function UpcomingEvent() {
 								maxime. Quisquam voluptatem, quos, est dignissimos natus at ex asperiores modi deserunt blanditiis, repellat alias temporibus exercitationem tempore esse eveniet assumenda ratione neque ut!
 							</p>
 						</div>
+						<hr className='w-full h-1 bg-[#D7AB6C]' />
 						<div className='flex flex-col gap-y-4'>
 							<h2 className='text-xl md:text-2xl font-semibold'>Tamu Unggulan</h2>
 							<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-x-4 gap-y-12'>
@@ -69,7 +79,8 @@ export default function UpcomingEvent() {
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
-										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Narasumber</p>
+										<p className='text-sm md:text-md font-semibold leading-relaxed tracking-normal'>Narasumber</p>
+										<p className='mt-2 text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi Tamu</p>
 									</div>
 								</div>
 								<div className='flex flex-col gap-y-4'>
@@ -79,6 +90,7 @@ export default function UpcomingEvent() {
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
 										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
+										<p className='mt-2 text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi Tamu</p>
 									</div>
 								</div>
 								<div className='flex flex-col gap-y-4'>
@@ -88,6 +100,7 @@ export default function UpcomingEvent() {
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
 										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
+										<p className='mt-2 text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi Tamu</p>
 									</div>
 								</div>
 								<div className='flex flex-col gap-y-4'>
@@ -97,6 +110,7 @@ export default function UpcomingEvent() {
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
 										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
+										<p className='mt-2 text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi Tamu</p>
 									</div>
 								</div>
 							</div>
