@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Artikel() {
 	return (
-		<div className='font-geist-sans overflow-x-hidden'>
+		<>
 			<header className='bg-[#f9f2e9]'>
 				<Navbar />
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12 mb-8'>
@@ -53,6 +53,6 @@ export default function Artikel() {
 				</div>
 			</main>
 			<Footer />
-		</div>
+		</>
 	);
 }

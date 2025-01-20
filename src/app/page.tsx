@@ -11,7 +11,7 @@ import ArticleCarousel from '@/components/layouts/ArticleCarousel';
 
 export default function Home() {
 	return (
-		<div className={'font-geist-sans overflow-x-hidden'}>
+		<>
 			<div className={'bg-[#f9f2e9] relative'}>
 				<Navbar />
 				<Image src={'/icons/circle.svg'} alt='' width={2000} height={2000} className={'absolute overflow-hidden translate-x-1/4 -translate-y-1/2 opacity-20 z-[0]'} />
@@ -125,8 +125,7 @@ export default function Home() {
 									<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming</p>
 									<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
 								</div>
-								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide'}>NVIDIA Campus Roadshow Balikpapan 2024</h1>
-								<p className={'text-base md:text-lg font-medium line-clamp-2 leading-relaxed tracking-normal'}>NVIDIA Powers the World&apos;s AI. And Yours. Berada di Universitas Mulia Balikpapan</p>
+								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-3 leading-relaxed tracking-wide'}>FIKOM TECHNOFEST 2024</h1>
 							</div>
 							<div className={'flex flex-col gap-4'}>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -144,7 +143,7 @@ export default function Home() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>19 Desember 2024 - 14:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 - 09:00 WITA</p>
 									</div>
 								</div>
 							</div>
@@ -183,6 +182,6 @@ export default function Home() {
 				</main>
 			</section>
 			<Footer />
-		</div>
+		</>
 	);
 }

@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function DetailArtikel() {
 	return (
-		<div className='font-geist-sans overflow-x-hidden'>
+		<>
 			<Navbar />
 			<main>
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
 					<div className='w-full flex flex-col justify-start gap-8'>
-						<div className={'text-gray-900 flex flex-col justify-start items-start gap-4'}>
-							<h1 className='text-2xl md:text-3xl xl:text-4xl font-bold leading-relaxed tracking-wide'>NVIDIA Campus Tour Roadshow Balikpapan 2024 Sukses Digelar</h1>
+						<div className={'text-gray-900 flex flex-col justify-start items-start gap-6'}>
+							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>NVIDIA Campus Tour Roadshow Balikpapan 2024 Sukses Digelar</h1>
 							<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
 								<b>21 Desember 2024</b> - Artikel Dibuat oleh <span className='text-[#D7AB6C]'>Admin</span>
 							</p>
@@ -42,6 +42,6 @@ export default function DetailArtikel() {
 				</div>
 			</main>
 			<Footer />
-		</div>
+		</>
 	);
 }

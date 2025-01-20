@@ -20,7 +20,7 @@ const ArticleCarousel = () => {
 				</div>
 			</div>
 			<div className={'article-carousel w-full flex flex-row gap-6 justify-start items-start overflow-x-auto snap-x snap-mandatory scroll-smooth mb-20'}>
-				<Link href='#' className='snap-start flex flex-col gap-6 min-w-[220px] sm:min-w-[360px] group'>
+				<Link href='/artikel/slug' className='snap-start flex flex-col gap-6 min-w-[220px] sm:min-w-[360px] group'>
 					<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
 						<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 						<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -41,7 +41,7 @@ const ArticleCarousel = () => {
 						</p>
 					</div>
 				</Link>
-				<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
+				<Link href='/artikel/slug' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 					<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
 						<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 						<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -62,7 +62,7 @@ const ArticleCarousel = () => {
 						</p>
 					</div>
 				</Link>
-				<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
+				<Link href='/artikel/slug' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 					<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
 						<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 						<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -83,7 +83,7 @@ const ArticleCarousel = () => {
 						</p>
 					</div>
 				</Link>
-				<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
+				<Link href='/artikel/slug' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 					<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
 						<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 						<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
@@ -104,7 +104,7 @@ const ArticleCarousel = () => {
 						</p>
 					</div>
 				</Link>
-				<Link href='#' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
+				<Link href='/artikel/slug' className='snap-start flex flex-col gap-6 min-w-[230px] sm:min-w-[360px] group'>
 					<div className='bg-gray-300 rounded-3xl relative aspect-video overflow-hidden mb-4'>
 						<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'w-full h-full object-cover object-center'} />
 						<div className={'absolute inset-0 bg-[#D7AB6C]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'}>
