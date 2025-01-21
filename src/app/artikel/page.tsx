@@ -11,13 +11,13 @@ export default function Artikel() {
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12 mb-8'>
 					<div className={'text-gray-900 flex flex-col justify-center items-center text-center sm:justify-start sm:items-start gap-4'}>
 						<h1 className='text-4xl md:text-5xl font-bold'>Artikel</h1>
-						<p className='text-xs md:text-md'>Jelajahi wawasan, aktivitas, dan pembaruan dari komunitas Nusantara Digital Society</p>
+						<p className='text-sm md:text-md'>Jelajahi wawasan, aktivitas, dan pembaruan dari komunitas Nusantara Digital Society</p>
 					</div>
 				</div>
 			</header>
 			<main>
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
-					<div className='relative flex flex-col gap-y-12'>
+					<div className='flex flex-col gap-y-12'>
 						<div className='w-full'>
 							<input type='text' className='w-full px-4 py-2 text-sm md:text-base rounded-3xl bg-zinc-50 border border-gray-300 focus:border-[#D7AB6C] focus:outline-[#D7AB6C]' placeholder='Cari artikel...' />
 						</div>

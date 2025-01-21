@@ -33,7 +33,7 @@ export default function UpcomingEvent() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 - 09:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 | 09:00 - 17:00 WITA</p>
 									</div>
 								</div>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
