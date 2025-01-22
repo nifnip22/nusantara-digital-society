@@ -1,10 +1,9 @@
 import Footer from '@/components/navigation/Footer';
 import Navbar from '@/components/navigation/Navbar';
-import Button from '@/components/ui/Button';
-import { Calendar, FileClock, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import { MapPin, Calendar, UsersRound, Quote } from 'lucide-react';
 
-export default function UpcomingEvent() {
+export default function DetailPastEvent() {
 	return (
 		<>
 			<Navbar />
@@ -12,11 +11,10 @@ export default function UpcomingEvent() {
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
 					<div className='flex flex-col lg:flex-row justify-between items-center gap-6 mb-20'>
 						<div className='w-full flex flex-col gap-y-4'>
-							<div className='flex flex-col'>
-								<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming Event</p>
-								<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
+							<div className='w-fit px-3 py-1 bg-gray-900 rounded-full'>
+								<p className='text-base md:text-lg text-[#D7AB6C]'>Completed</p>
 							</div>
-							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>FIKOM TECHNOFEST 2024</h1>
+							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>NVIDIA Campus Tour Roadshow 2024</h1>
 							<div className={'flex flex-col gap-4'}>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
@@ -38,18 +36,17 @@ export default function UpcomingEvent() {
 								</div>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
-										<FileClock className={'w-8 h-8 text-[#D7AB6C]'} />
+										<UsersRound className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
-										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>03 Februari 2025 - 23:59 WITA</p>
+										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Jumlah Peserta Hadir</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>250</p>
 									</div>
 								</div>
 							</div>
-							<Button label='Registrasi Sekarang' type={'button'} variant={'dark'} className={'rounded-full after:content-["_→"]'} />
 						</div>
 						<div className={'bg-gray-300 aspect-square w-full lg:max-w-sm xl:max-w-lg rounded-3xl overflow-hidden'}>
-							<Image src={'/img/event.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<Image src={'/img/Test.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 					</div>
 					<div className='flex flex-col gap-y-20'>
@@ -116,6 +113,66 @@ export default function UpcomingEvent() {
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
 										<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Pembicara</p>
 										<p className='mt-2 text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi Tamu</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex flex-col gap-1'>
+								<h2 className='text-xl md:text-2xl font-semibold'>Galeri Event</h2>
+								<hr className='w-20 h-1 bg-[#D7AB6C]' />
+							</div>
+							<div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+								<div className='grid gap-4'>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+								</div>
+								<div className='grid gap-4'>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+								</div>
+								<div className='grid gap-4'>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex flex-col gap-1'>
+								<h2 className='text-xl md:text-2xl font-semibold'>Testimonial</h2>
+								<hr className='w-20 h-1 bg-[#D7AB6C]' />
+							</div>
+							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+								<div className='w-full bg-[#f9f2e9] rounded-3xl overflow-hidden'>
+									<div className='flex items-stretch'>
+										<div className='bg-gray-300 w-[40%] h-80 rounded-l-3xl overflow-hidden'>
+											<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										</div>
+										<div className='w-[60%] h-80'>
+											<div className='h-full p-4 flex flex-col justify-between'>
+												<div className='flex flex-col gap-8'>
+													<Quote fill='#D7AB6C' color='#D7AB6C' size={50} />
+													<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+												</div>
+												<div className='flex flex-col gap-1'>
+													<hr className='h-0.5 bg-[#D7AB6C]' />
+													<h2 className='text-md md:text-lg font-semibold'>Nama</h2>
+													<p className='text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi</p>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
