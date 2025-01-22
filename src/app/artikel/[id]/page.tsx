@@ -1,5 +1,5 @@
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar';
+import Footer from '@/components/navigation/Footer';
+import Navbar from '@/components/navigation/Navbar';
 import Image from 'next/image';
 
 export default function DetailArtikel() {

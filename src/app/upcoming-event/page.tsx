@@ -1,5 +1,5 @@
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar';
+import Footer from '@/components/navigation/Footer';
+import Navbar from '@/components/navigation/Navbar';
 import Button from '@/components/ui/Button';
 import { Calendar, FileClock, MapPin } from 'lucide-react';
 import Image from 'next/image';

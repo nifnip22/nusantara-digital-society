@@ -1,8 +1,8 @@
-import Navbar from '../components/navbar';
+import Navbar from '@/components/navigation/Navbar';
 import Button from '@/components/ui/Button';
-import Footer from '@/components/footer';
+import Footer from '@/components/navigation/Footer';
 import Form from 'next/form';
-import FloatingLabelInput from '@/components/floatingInput';
+import FloatingLabelInput from '@/components/forms/FloatingInput';
 import { JoinUsInput } from '@/etc/constant';
 import Link from 'next/link';
 import { Calendar, FileClock, MapPin } from 'lucide-react';
@@ -167,7 +167,9 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={'flex justify-center items-center mt-24'}>
-						<Button label={'Lihat Past Events'} type={'button'} variant={'primary'} className={'rounded-full after:content-["_→"]'} />
+						<Link href={'/past-events'}>
+							<Button label={'Lihat Past Events'} type={'button'} variant={'primary'} className={'rounded-full after:content-["_→"]'} />
+						</Link>
 					</div>
 				</main>
 			</section>
