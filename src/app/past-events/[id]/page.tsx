@@ -1,7 +1,7 @@
 import Footer from '@/components/navigation/Footer';
 import Navbar from '@/components/navigation/Navbar';
 import Image from 'next/image';
-import { MapPin, Calendar, UsersRound, Quote } from 'lucide-react';
+import { MapPin, Calendar, UsersRound } from 'lucide-react';
 
 export default function DetailPastEvent() {
 	return (
@@ -31,7 +31,7 @@ export default function DetailPastEvent() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 | 09:00 - 17:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>19 Desember 2024 | 13:00 - 17:00 WITA</p>
 									</div>
 								</div>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -50,7 +50,7 @@ export default function DetailPastEvent() {
 						</div>
 					</div>
 					<div className='flex flex-col gap-y-20'>
-						<div className='flex flex-col gap-y-4'>
+						<div className='flex flex-col gap-y-6'>
 							<div className='flex flex-col gap-1'>
 								<h2 className='text-xl md:text-2xl font-semibold'>Deskripsi Event</h2>
 								<hr className='w-20 h-1 bg-[#D7AB6C]' />
@@ -69,7 +69,7 @@ export default function DetailPastEvent() {
 								maxime. Quisquam voluptatem, quos, est dignissimos natus at ex asperiores modi deserunt blanditiis, repellat alias temporibus exercitationem tempore esse eveniet assumenda ratione neque ut!
 							</p>
 						</div>
-						<div className='flex flex-col gap-y-4'>
+						<div className='flex flex-col gap-y-6'>
 							<div className='flex flex-col gap-1'>
 								<h2 className='text-xl md:text-2xl font-semibold'>Tamu Unggulan</h2>
 								<hr className='w-20 h-1 bg-[#D7AB6C]' />
@@ -117,12 +117,58 @@ export default function DetailPastEvent() {
 								</div>
 							</div>
 						</div>
-						<div className='flex flex-col gap-y-4'>
+						<div className='flex flex-col gap-y-6'>
 							<div className='flex flex-col gap-1'>
-								<h2 className='text-xl md:text-2xl font-semibold'>Galeri Event</h2>
+								<h2 className='text-xl md:text-2xl font-semibold'>Agenda Kegiatan</h2>
 								<hr className='w-20 h-1 bg-[#D7AB6C]' />
 							</div>
-							<div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+							<div className='flex items-start gap-x-6 sm:gap-x-12'>
+								<div className='bg-[#D7AB6C] p-4 w-40 sm:w-24 flex flex-col gap-y-2 justify-center items-center text-center rounded-3xl text-gray-100'>
+									<p className='text-xs md:text-sm'>Senin</p>
+									<h1 className='text-lg md:text-xl font-semibold'>19 Des</h1>
+								</div>
+								<div className='flex flex-col gap-y-6'>
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>11:30</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Registrasi Pendaftaran On the Spot Dibuka</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>13:30</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Registrasi Pendaftaran On the Spot Ditutup & Pembacaan Doa Dimulai</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>14:00</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Acara Dimulai</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>17:00</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Acara Selesai</h1>
+									</div>
+									<hr />
+								</div>
+							</div>
+						</div>
+						<div className='flex flex-col gap-y-6'>
+							<div className='flex flex-col gap-1'>
+								<h2 className='text-xl md:text-2xl font-semibold'>Galeri Foto</h2>
+								<hr className='w-20 h-1 bg-[#D7AB6C]' />
+							</div>
+							<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
 								<div className='grid gap-4'>
 									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
 										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
@@ -149,31 +195,23 @@ export default function DetailPastEvent() {
 								</div>
 							</div>
 						</div>
-						<div className='flex flex-col gap-y-4'>
+						<div className='flex flex-col gap-y-6'>
 							<div className='flex flex-col gap-1'>
-								<h2 className='text-xl md:text-2xl font-semibold'>Testimonial</h2>
+								<h2 className='text-xl md:text-2xl font-semibold'>Galeri Video</h2>
 								<hr className='w-20 h-1 bg-[#D7AB6C]' />
 							</div>
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-								<div className='w-full bg-[#f9f2e9] rounded-3xl overflow-hidden'>
-									<div className='flex items-stretch'>
-										<div className='bg-gray-300 w-[40%] h-80 rounded-l-3xl overflow-hidden'>
-											<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
-										</div>
-										<div className='w-[60%] h-80'>
-											<div className='h-full p-4 flex flex-col justify-between'>
-												<div className='flex flex-col gap-8'>
-													<Quote fill='#D7AB6C' color='#D7AB6C' size={50} />
-													<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-												</div>
-												<div className='flex flex-col gap-1'>
-													<hr className='h-0.5 bg-[#D7AB6C]' />
-													<h2 className='text-md md:text-lg font-semibold'>Nama</h2>
-													<p className='text-sm md:text-md text-gray-900/80 font-medium leading-relaxed tracking-normal'>Deskripsi</p>
-												</div>
-											</div>
-										</div>
-									</div>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
+									Video
+								</div>
+								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
+									Video
+								</div>
+								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
+									Video
+								</div>
+								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
+									Video
 								</div>
 							</div>
 						</div>

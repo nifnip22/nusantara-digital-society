@@ -120,6 +120,52 @@ export default function UpcomingEvent() {
 								</div>
 							</div>
 						</div>
+						<div className='flex flex-col gap-y-6'>
+							<div className='flex flex-col gap-1'>
+								<h2 className='text-xl md:text-2xl font-semibold'>Agenda Kegiatan</h2>
+								<hr className='w-20 h-1 bg-[#D7AB6C]' />
+							</div>
+							<div className='flex items-start gap-x-6 sm:gap-x-12'>
+								<div className='bg-[#D7AB6C] p-4 w-40 sm:w-24 flex flex-col gap-y-2 justify-center items-center text-center rounded-3xl text-gray-100'>
+									<p className='text-xs md:text-sm'>Senin</p>
+									<h1 className='text-lg md:text-xl font-semibold'>19 Des</h1>
+								</div>
+								<div className='flex flex-col gap-y-6'>
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>11:30</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Registrasi Pendaftaran On the Spot Dibuka</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>13:30</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Registrasi Pendaftaran On the Spot Ditutup & Pembacaan Doa Dimulai</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>14:00</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Acara Dimulai</h1>
+									</div>
+									<hr />
+									<div className='flex flex-col gap-y-1'>
+										<div className='flex gap-x-2 items-start text-sm text-gray-600'>
+											<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
+											<p className={'text-sm md:text-md font-medium'}>17:00</p>
+										</div>
+										<h1 className='text-md md:text-lg font-semibold'>Acara Selesai</h1>
+									</div>
+									<hr />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</main>

@@ -77,7 +77,7 @@ export default function PastEventCard({ data }: { data: EventData }) {
 					<p className={'mt-4 text-lg font-semibold line-clamp-1'}>Highlights</p>
 					<ul className='space-y-2'>
 						{data.highlights.map((highlight, index) => (
-							<li key={index} className='flex gap-x-4 items-start text-sm text-gray-600'>
+							<li key={index} className='flex gap-x-2 items-start text-sm text-gray-600'>
 								<div className='w-2 h-2 bg-[#D7AB6C] flex-shrink-0 self-center rounded-full'></div>
 								<p className={'text-md font-medium'}>{highlight}</p>
 							</li>
