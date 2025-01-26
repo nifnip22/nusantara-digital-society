@@ -82,7 +82,7 @@ export default function Home() {
 					</div>
 					<div className={'mb-72 md:mb-52 relative'}>
 						<div className={'xl:pl-52'}>
-							<Image src={'/img/Test.jpg'} alt={'Terbaru'} width={1500} height={1500} className={'w-full h-auto rounded-3xl'} />
+							<Image src={'/img/image_placeholder.png'} alt={'Judul Artikel'} width={1500} height={1500} className={'w-full h-auto rounded-3xl'} />
 						</div>
 						<Link
 							href={'#'}
@@ -92,9 +92,9 @@ export default function Home() {
 							<div className={'z-2'}>
 								<p className={'uppercase text-md md:text-lg font-semibold tracking-wide'}>Terbaru</p>
 								<hr className={'w-6 md:w-12 h-1 bg-white mb-4'} />
-								<h2 className={'mt-2 mb-4 text-xl md:text-2xl font-bold line-clamp-2 tracking-wide leading-relaxed'}>NVIDIA Campus Roadshow 2024 Universitas Mulia</h2>
+								<h2 className={'mt-2 mb-4 text-xl md:text-2xl font-bold line-clamp-2 tracking-wide leading-normal'}>Judul Artikel</h2>
 								<p className={'text-sm md:text-md font-medium w-full line-clamp-3 tracking-wide leading-relaxed'}>
-									NVIDIA Campus Roadshow 2024 Sukses Diselenggarakan di Universitas Mulia Balikpapan Bekerja Sama dengan Bitracom Gaming pada Hari Kamis (19/12/2024) Kemarin.
+									Deskripsi/Slug Artikel 
 								</p>
 								<p className={'opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-sm md:text-md font-semibold text-white-500 hover:text-white-400 after:content-["_→"]'}>
 									Baca Selengkapnya
@@ -119,7 +119,7 @@ export default function Home() {
 					</div>
 					<div className={'flex flex-col 2xl:flex-row gap-y-16 2xl:gap-x-8 justify-center items-center'}>
 						<div className={'bg-gray-300 aspect-square w-full 2xl:max-w-4xl rounded-3xl overflow-hidden'}>
-							<Image src={'/img/event.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<Image src={'/img/image_placeholder.png'} alt={'Judul Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 						<div className={'flex flex-col gap-8 w-full 2xl:max-w-4xl'}>
 							<div className={'flex flex-col gap-4'}>
@@ -127,7 +127,7 @@ export default function Home() {
 									<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming</p>
 									<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
 								</div>
-								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-2 leading-relaxed tracking-wide'}>FIKOM TECHNOFEST 2024</h1>
+								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-2 leading-normal tracking-wide'}>Judul Event</h1>
 							</div>
 							<div className={'flex flex-col gap-4'}>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -136,7 +136,7 @@ export default function Home() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Lokasi</p>
 									</div>
 								</div>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -145,7 +145,7 @@ export default function Home() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 | 09:00 - 17:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Tanggal | Waktu</p>
 									</div>
 								</div>
 								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -154,7 +154,7 @@ export default function Home() {
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>03 Februari 2025 - 23:59 WITA</p>
+										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Tanggal | Waktu</p>
 									</div>
 								</div>
 							</div>
