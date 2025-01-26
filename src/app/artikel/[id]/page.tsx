@@ -10,13 +10,15 @@ export default function DetailArtikel() {
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
 					<div className='w-full flex flex-col justify-start gap-8'>
 						<div className={'text-gray-900 flex flex-col justify-start items-start gap-6'}>
-							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>NVIDIA Campus Tour Roadshow Balikpapan 2024 Sukses Digelar</h1>
-							<p className='text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
-								<b>21 Desember 2024</b> - Artikel Dibuat oleh <span className='text-[#D7AB6C]'>Admin</span>
+							<h1 className='text-4xl md:text-5xl font-bold leading-normal tracking-wide'>NVIDIA Campus Tour Roadshow Balikpapan 2024 Sukses Digelar</h1>
+							<p className='flex items-center gap-2 text-xs md:text-sm xl:text-md line-clamp-1 leading-relaxed tracking-wide'>
+								<b>21 Desember 2024</b>
+								<p className='text-gray-900/50'>•</p>
+								<p>Artikel Dibuat oleh <span className='text-[#D7AB6C]'>Admin</span></p>
 							</p>
 						</div>
 						<div className='bg-zinc-300 w-full rounded-3xl overflow-hidden'>
-							<Image src={'/img/Test.jpg'} alt={'Artikel'} width={1500} height={1500} className={'object-cover object-center w-full h-full'} />
+							<Image src={'/img/image_placeholder.png'} alt={'Judul Artikel'} width={1500} height={1500} className={'object-cover object-center w-full h-full'} />
 						</div>
 						<p className='text-sm md:text-md font-medium leading-relaxed tracking-normal'>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis necessitatibus saepe, sed veniam odit odio a corporis sint, maiores distinctio nobis sapiente nisi quod dolorem assumenda cupiditate
