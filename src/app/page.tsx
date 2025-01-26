@@ -130,31 +130,31 @@ export default function Home() {
 								<h1 className={'text-2xl md:text-3xl font-bold line-clamp-2 leading-normal tracking-wide'}>Judul Event</h1>
 							</div>
 							<div className={'flex flex-col gap-4'}>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<MapPin className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Lokasi</p>
+										<p className={'text-base md:text-lg font-medium'}>Lokasi</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<Calendar className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Tanggal | Waktu</p>
+										<p className={'text-base md:text-lg font-medium'}>Tanggal | Waktu</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<FileClock className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Tanggal | Waktu</p>
+										<p className={'text-base md:text-lg font-medium'}>Tanggal | Waktu</p>
 									</div>
 								</div>
 							</div>

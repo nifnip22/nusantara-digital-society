@@ -12,41 +12,41 @@ export default function DetailPastEvent() {
 					<div className='flex flex-col lg:flex-row justify-between items-center gap-6 mb-20'>
 						<div className='w-full flex flex-col gap-y-4'>
 							<div className='w-fit px-3 py-1 bg-gray-900 rounded-full'>
-								<p className='text-base md:text-lg text-[#D7AB6C]'>Completed</p>
+								<p className='text-base md:text-lg text-[#D7AB6C] font-semibold'>Completed</p>
 							</div>
-							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>NVIDIA Campus Tour Roadshow 2024</h1>
+							<h1 className='text-4xl md:text-5xl font-bold leading-normal tracking-wide'>Judul Event</h1>
 							<div className={'flex flex-col gap-4'}>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<MapPin className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
+										<p className={'text-base md:text-lg font-medium'}>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<Calendar className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>19 Desember 2024 | 13:00 - 17:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium'}>19 Desember 2024 | 13:00 - 17:00 WITA</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<UsersRound className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Jumlah Peserta Hadir</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>250</p>
+										<p className={'text-base md:text-lg font-medium'}>200</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className={'bg-gray-300 aspect-square w-full lg:max-w-sm xl:max-w-lg rounded-3xl overflow-hidden'}>
-							<Image src={'/img/Test.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<Image src={'/img/image_placeholder.png'} alt={'Judul Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 					</div>
 					<div className='flex flex-col gap-y-20'>
@@ -77,7 +77,7 @@ export default function DetailPastEvent() {
 							<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-x-4 gap-y-12'>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -87,7 +87,7 @@ export default function DetailPastEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -97,7 +97,7 @@ export default function DetailPastEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -107,7 +107,7 @@ export default function DetailPastEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -171,26 +171,26 @@ export default function DetailPastEvent() {
 							<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
 								<div className='grid gap-4'>
 									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
-									</div>
-								</div>
-								<div className='grid gap-4'>
-									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
-									</div>
-									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 								</div>
 								<div className='grid gap-4'>
 									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/Test.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
-										<Image src={'/img/event.jpg'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+								</div>
+								<div className='grid gap-4'>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+									</div>
+									<div className='bg-gray-300 max-w-full rounded-3xl overflow-hidden'>
+										<Image src={'/img/image_placeholder.png'} alt={'Foto'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 								</div>
 							</div>
@@ -200,18 +200,18 @@ export default function DetailPastEvent() {
 								<h2 className='text-xl md:text-2xl font-semibold'>Galeri Video</h2>
 								<hr className='w-20 h-1 bg-[#D7AB6C]' />
 							</div>
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
-									Video
+							<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+								<div className='bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden'>
+									<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen frameBorder='0' className='w-full h-full object-cover'></iframe>
 								</div>
-								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
-									Video
+								<div className='bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden'>
+									<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen frameBorder='0' className='w-full h-full object-cover'></iframe>
 								</div>
-								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
-									Video
+								<div className='bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden'>
+									<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen frameBorder='0' className='w-full h-full object-cover'></iframe>
 								</div>
-								<div className="bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden">
-									Video
+								<div className='bg-gray-300 max-w-full aspect-video rounded-3xl overflow-hidden'>
+									<iframe src='https://www.youtube.com/embed/mFVyoyNyE5U' allowFullScreen frameBorder='0' className='w-full h-full object-cover'></iframe>
 								</div>
 							</div>
 						</div>

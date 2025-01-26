@@ -12,44 +12,43 @@ export default function UpcomingEvent() {
 				<div className='px-6 md:px-16 2xl:px-40 pt-6 py-12'>
 					<div className='flex flex-col lg:flex-row justify-between items-center gap-6 mb-20'>
 						<div className='w-full flex flex-col gap-y-4'>
-							<div className='flex flex-col'>
-								<p className={'uppercase text-sm md:text-lg text-[#D7AB6C] font-semibold'}>Upcoming Event</p>
-								<hr className={'w-12 h-1 bg-[#D7AB6C]'} />
+							<div className='w-fit px-3 py-1 bg-[#D7AB6C] rounded-full'>
+								<p className='text-base md:text-lg text-gray-100 font-semibold'>Upcoming Event</p>
 							</div>
-							<h1 className='text-4xl md:text-5xl font-bold leading-relaxed tracking-wide'>FIKOM TECHNOFEST 2024</h1>
+							<h1 className='text-4xl md:text-5xl font-bold leading-normal tracking-wide'>Judul Event</h1>
 							<div className={'flex flex-col gap-4'}>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<MapPin className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>Gedung Cheng Ho - Universitas Mulia Balikpapan</p>
+										<p className={'text-base md:text-lg font-medium'}>Lokasi</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<Calendar className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>04 Februari 2025 | 09:00 - 17:00 WITA</p>
+										<p className={'text-base md:text-lg font-medium'}>Tanggal | Waktu</p>
 									</div>
 								</div>
-								<div className={'group flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
+								<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 									<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
 										<FileClock className={'w-8 h-8 text-[#D7AB6C]'} />
 									</div>
 									<div>
 										<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
-										<p className={'text-base md:text-lg font-medium line-clamp-1'}>03 Februari 2025 - 23:59 WITA</p>
+										<p className={'text-base md:text-lg font-medium'}>Tanggal - Waktu</p>
 									</div>
 								</div>
 							</div>
 							<Button label='Registrasi Sekarang' type={'button'} variant={'dark'} className={'rounded-full after:content-["_→"]'} />
 						</div>
 						<div className={'bg-gray-300 aspect-square w-full lg:max-w-sm xl:max-w-lg rounded-3xl overflow-hidden'}>
-							<Image src={'/img/event.jpg'} alt={'Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
+							<Image src={'/img/image_placeholder.png'} alt={'Judul Event'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 						</div>
 					</div>
 					<div className='flex flex-col gap-y-20'>
@@ -80,7 +79,7 @@ export default function UpcomingEvent() {
 							<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-x-4 gap-y-12'>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -90,7 +89,7 @@ export default function UpcomingEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -100,7 +99,7 @@ export default function UpcomingEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
@@ -110,7 +109,7 @@ export default function UpcomingEvent() {
 								</div>
 								<div className='flex flex-col gap-y-4'>
 									<div className='bg-gray-300 w-full aspect-square rounded-3xl overflow-hidden'>
-										<Image src={'/event'} alt={''} width={1500} height={1500} className={'w-full h-full object-cover'} />
+										<Image src={'/img/image_placeholder.png'} alt={'Nama Tamu'} width={1500} height={1500} className={'w-full h-full object-cover'} />
 									</div>
 									<div className='flex flex-col'>
 										<h2 className='text-md md:text-lg font-semibold'>Nama Tamu</h2>
