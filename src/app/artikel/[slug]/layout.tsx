@@ -1,7 +1,7 @@
 import Footer from '@/components/navigation/Footer';
 import Navbar from '@/components/navigation/Navbar';
 
-export default function artikelLayout({ children }: { children: React.ReactNode }) {
+export default function artikelSlugLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<Navbar />

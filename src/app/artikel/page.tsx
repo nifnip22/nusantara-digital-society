@@ -1,10 +1,32 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+
 import Footer from '@/components/navigation/Footer';
 import ArticleCard from '@/components/layouts/ArticleCard';
 import Navbar from '@/components/navigation/Navbar';
 import Pagination from '@/components/navigation/Pagination';
 import { Search } from 'lucide-react';
+import { compileMDX } from 'next-mdx-remote/rsc';
 
-export default function Artikel() {
+export default async function Artikel() {
+	const filenames = await fs.readdir(path.join(process.cwd(), 'src/mdx'));
+	const articles = await Promise.all(
+		filenames.map(async (filename) => {
+			const content = await fs.readFile(path.join(process.cwd(), 'src/mdx', filename), 'utf8');
+			const { frontmatter } = await compileMDX<{ title: string, imageSrc: string, date: string, author: string, description: string }>({
+				source: content,
+				options: {
+					parseFrontmatter: true,
+				},
+			});
+			return {
+				filename,
+				slug: filename.replace('.mdx', ''),
+				...frontmatter,
+			};
+		})
+	);
+
 	return (
 		<>
 			<header className='bg-[#f9f2e9]'>
@@ -26,30 +48,9 @@ export default function Artikel() {
 							</div>
 						</div>
 						<div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16'>
-							<ArticleCard
-								linkHref='/artikel/slug'
-								imageSrc='/img/image_placeholder.png'
-								date='21 Desember 2024'
-								author='Admin'
-								title='Judul Artikel'
-								description='Deskripsi/Slug Artikel'
-							/>
-							<ArticleCard
-								linkHref='/artikel/slug'
-								imageSrc='/img/image_placeholder.png'
-								date='21 Desember 2024'
-								author='Admin'
-								title='Judul Artikel'
-								description='Deskripsi/Slug Artikel'
-							/>
-							<ArticleCard
-								linkHref='/artikel/slug'
-								imageSrc='/img/image_placeholder.png'
-								date='21 Desember 2024'
-								author='Admin'
-								title='Judul Artikel'
-								description='Deskripsi/Slug Artikel'
-							/>
+							{articles.map((article) => (
+								<ArticleCard key={article.slug} linkHref={`artikel/${article.slug}`} imageSrc={article.imageSrc} date={article.date} author={article.author} title={article.title} description={article.description} />
+							))}
 						</div>
 						<Pagination />
 					</div>

@@ -7,8 +7,13 @@ const font = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 });
 
+const siteName = 'Nusantara Digital Society';
+
 export const metadata: Metadata = {
-	title: 'Nusantara Digital Society',
+	title: {
+		template: `%s | ${siteName}`,
+		default: siteName,
+	},
 	description: 'Website Resmi mengenai Wawasan, Aktivitas, dan Pembaruan dari Komunitas Nusantara Digital Society.',
 };
 
