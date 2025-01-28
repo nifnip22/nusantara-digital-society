@@ -4,7 +4,7 @@ import path from 'path';
 import Footer from '@/components/navigation/Footer';
 import ArticleCard from '@/components/layouts/ArticleCard';
 import Navbar from '@/components/navigation/Navbar';
-import Pagination from '@/components/navigation/Pagination';
+// import Pagination from '@/components/navigation/Pagination';
 import { Search } from 'lucide-react';
 import { compileMDX } from 'next-mdx-remote/rsc';
 
@@ -52,7 +52,7 @@ export default async function Artikel() {
 								<ArticleCard key={article.slug} linkHref={`artikel/${article.slug}`} imageSrc={article.imageSrc} date={article.date} author={article.author} title={article.title} description={article.description} />
 							))}
 						</div>
-						<Pagination />
+						{/* <Pagination /> */}
 					</div>
 				</div>
 			</main>
