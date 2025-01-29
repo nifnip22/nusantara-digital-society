@@ -9,10 +9,10 @@ import { Search } from 'lucide-react';
 import { compileMDX } from 'next-mdx-remote/rsc';
 
 export default async function Artikel() {
-	const filenames = await fs.readdir(path.join(process.cwd(), 'src/mdx'));
+	const filenames = await fs.readdir(path.join(process.cwd(), 'src/mdx/artikel'));
 	const articles = await Promise.all(
 		filenames.map(async (filename) => {
-			const content = await fs.readFile(path.join(process.cwd(), 'src/mdx', filename), 'utf8');
+			const content = await fs.readFile(path.join(process.cwd(), 'src/mdx/artikel', filename), 'utf8');
 			const { frontmatter } = await compileMDX<{ title: string, imageSrc: string, date: string, author: string, description: string }>({
 				source: content,
 				options: {

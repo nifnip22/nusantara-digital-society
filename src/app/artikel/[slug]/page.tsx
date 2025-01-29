@@ -8,7 +8,7 @@ import { notFound } from 'next/navigation';
 export async function generateMetadata({ params }: { params: { slug: string } }) {
     const { slug } = await params;
 	try {
-		const filePath = path.join(process.cwd(), 'src/mdx', `${slug}.mdx`);
+		const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
 		const content = await fs.readFile(filePath, 'utf8');
 
 		const { frontmatter } = await compileMDX<{ title: string }>({
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 export default async function ArtikelSlug({ params }: { params: { slug: string } }) {
     const { slug } = await params;
-	const filePath = path.join(process.cwd(), 'src/mdx', `${slug}.mdx`);
+	const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
 
 	try {
 		const content = await fs.readFile(filePath, 'utf8');
@@ -40,6 +40,7 @@ export default async function ArtikelSlug({ params }: { params: { slug: string }
 			date: string;
 			author: string;
 			imageSrc: string;
+			imageAlt: string;
 		}>({
 			source: content,
 			options: {
@@ -50,7 +51,7 @@ export default async function ArtikelSlug({ params }: { params: { slug: string }
 		return (
 			<>
 				<ArtikelHeader title={data.frontmatter.title} date={data.frontmatter.date} author={data.frontmatter.author} />
-				<ArtikelImage imageSrc={data.frontmatter.imageSrc} />
+				<ArtikelImage imageSrc={data.frontmatter.imageSrc} imageAlt={data.frontmatter.imageAlt} />
 				<article>{data.content}</article>
 			</>
 		);
