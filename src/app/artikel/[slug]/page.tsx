@@ -5,7 +5,7 @@ import ArtikelHeader from '@/components/artikel/ArtikelHeader';
 import ArtikelImage from '@/components/artikel/ArtikelImage';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
 	try {
 		const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 	}
 }
 
-export default async function ArtikelSlug({ params }: { params: { slug: string } }) {
+export default async function ArtikelSlug({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
 	const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
 
