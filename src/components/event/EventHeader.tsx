@@ -3,8 +3,8 @@ import Button from '../ui/Button';
 import Link from 'next/link';
 
 interface EventHeaderProps {
-	title: string;
-	location: string;
+	eventTitle: string;
+	eventLocation: string;
 	eventDate: string;
 	eventTime: string;
 	registrationDeadlineDate: string;
@@ -12,10 +12,10 @@ interface EventHeaderProps {
 	registrationLink?: string;
 }
 
-export default function EventHeader({ title, location, eventDate, eventTime, registrationDeadlineDate, registrationDeadlineTime, registrationLink }: EventHeaderProps) {
+export default function EventHeader({ eventTitle, eventLocation, eventDate, eventTime, registrationDeadlineDate, registrationDeadlineTime, registrationLink }: EventHeaderProps) {
 	return (
 		<>
-			<h1 className='text-4xl md:text-5xl font-bold leading-normal tracking-wide'>{title}</h1>
+			<h1 className='text-4xl md:text-5xl font-bold leading-normal tracking-wide'>{eventTitle}</h1>
 			<div className={'flex flex-col gap-4'}>
 				<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
 					<div className={'p-2 bg-[#D7AB6C] bg-opacity-20 rounded-xl'}>
@@ -23,7 +23,7 @@ export default function EventHeader({ title, location, eventDate, eventTime, reg
 					</div>
 					<div>
 						<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Lokasi</p>
-						<p className={'text-base md:text-lg font-medium'}>{location}</p>
+						<p className={'text-base md:text-lg font-medium'}>{eventLocation}</p>
 					</div>
 				</div>
 				<div className={'group flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors'}>
@@ -33,7 +33,7 @@ export default function EventHeader({ title, location, eventDate, eventTime, reg
 					<div>
 						<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Tanggal & Waktu</p>
 						<p className={'text-base md:text-lg font-medium'}>
-							{eventDate} | {eventTime}
+							{eventDate} | {eventTime} WITA
 						</p>
 					</div>
 				</div>
@@ -44,7 +44,7 @@ export default function EventHeader({ title, location, eventDate, eventTime, reg
 					<div>
 						<p className={'text-xs md:text-sm font-semibold text-gray-500 group-hover:text-[#D7AB6C] transition-colors'}>Batas Waktu Pendaftaran</p>
 						<p className={'text-base md:text-lg font-medium'}>
-							{registrationDeadlineDate} | {registrationDeadlineTime}
+							{registrationDeadlineDate} | {registrationDeadlineTime} WITA
 						</p>
 					</div>
 				</div>
