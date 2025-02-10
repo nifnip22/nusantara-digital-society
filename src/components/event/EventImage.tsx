@@ -1,9 +1,7 @@
+import { EventImageProps } from '@/utils/types';
 import Image from "next/image";
 
-interface EventImageProps {
-    eventImageSrc: string;
-    eventImageAlt?: string;
-}
+
 
 export default function EventImage({ eventImageSrc, eventImageAlt }: EventImageProps) {
 	return (

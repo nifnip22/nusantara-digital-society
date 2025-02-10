@@ -5,57 +5,72 @@ import ArtikelHeader from '@/components/artikel/ArtikelHeader';
 import ArtikelImage from '@/components/artikel/ArtikelImage';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-	try {
-		const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
-		const content = await fs.readFile(filePath, 'utf8');
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  try {
+    const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
+    const content = await fs.readFile(filePath, 'utf8');
 
-		const { frontmatter } = await compileMDX<{ title: string }>({
-			source: content,
-			options: {
-				parseFrontmatter: true,
-			},
-		});
+    const { frontmatter } = await compileMDX<{ title: string }>({
+      source: content,
+      options: {
+        parseFrontmatter: true,
+      },
+    });
 
-		return {
-			title: frontmatter.title,
-		};
-	} catch {
-		return {
-			title: 'Artikel Tidak Ditemukan',
-		};
-	}
+    return {
+      title: frontmatter.title,
+    };
+  } catch {
+    return {
+      title: 'Artikel Tidak Ditemukan',
+    };
+  }
 }
 
-export default async function ArtikelSlug({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-	const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
+export default async function ArtikelSlug({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), 'src/mdx/artikel', `${slug}.mdx`);
 
-	try {
-		const content = await fs.readFile(filePath, 'utf8');
+  try {
+    const content = await fs.readFile(filePath, 'utf8');
 
-		const data = await compileMDX<{
-			title: string;
-			date: string;
-			author: string;
-			imageSrc: string;
-			imageAlt: string;
-		}>({
-			source: content,
-			options: {
-				parseFrontmatter: true,
-			},
-		});
+    const data = await compileMDX<{
+      title: string;
+      date: string;
+      author: string;
+      imageSrc: string;
+      imageAlt: string;
+    }>({
+      source: content,
+      options: {
+        parseFrontmatter: true,
+      },
+    });
 
-		return (
-			<>
-				<ArtikelHeader title={data.frontmatter.title} date={data.frontmatter.date} author={data.frontmatter.author} />
-				<ArtikelImage imageSrc={data.frontmatter.imageSrc} imageAlt={data.frontmatter.imageAlt} />
-				<article>{data.content}</article>
-			</>
-		);
-	} catch {
-		notFound();
-	}
+    return (
+      <>
+        <ArtikelHeader
+          title={data.frontmatter.title}
+          date={data.frontmatter.date}
+          author={data.frontmatter.author}
+        />
+        <ArtikelImage
+          imageSrc={data.frontmatter.imageSrc}
+          imageAlt={data.frontmatter.imageAlt}
+        />
+        <article>{data.content}</article>
+      </>
+    );
+  } catch {
+    notFound();
+  }
 }

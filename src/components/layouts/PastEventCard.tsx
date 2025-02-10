@@ -2,22 +2,9 @@ import { Calendar, MapPin, UsersRound } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../ui/Button';
+import { EventData } from '@/utils/types';
 
-interface EventData {
-	imageSrc: string;
-	title: string;
-	location: string;
-	datetime: string;
-	participantsCount: string;
-	guests: GuestProps[];
-	highlights: string[];
-}
 
-interface GuestProps {
-	guestImageSrc: string;
-	guestName: string;
-	guestRole: string;
-}
 
 export default function PastEventCard({ data }: { data: EventData }) {
 	return (
