@@ -1,6 +1,6 @@
 import EventAgenda from '@/components/event/EventAgenda';
 import EventGuests from '@/components/event/EventGuests';
-import EventHeader from '@/components/event/EventHeader';
+import UpcomingEventHeader from '@/components/event/UpcomingEventHeader';
 import EventImage from '@/components/event/EventImage';
 import path from 'path';
 import { promises as fs } from 'fs';
@@ -12,20 +12,20 @@ export async function generateMetadata() {
 		const filePath = path.join(process.cwd(), 'src/mdx/events/upcoming-event', 'page.mdx');
 		const content = await fs.readFile(filePath, 'utf-8');
 
-		const { frontmatter } = await compileMDX<{ eventTitle: string}>({
+		const { frontmatter } = await compileMDX<{ eventTitle: string }>({
 			source: content,
 			options: {
 				parseFrontmatter: true,
-			}
+			},
 		});
 
 		return {
 			title: `Upcoming Event - ${frontmatter.eventTitle}`,
-		}
+		};
 	} catch {
 		return {
-			title: 'Event Tidak Ditemukan'
-		}
+			title: 'Event Tidak Ditemukan',
+		};
 	}
 }
 
@@ -69,7 +69,7 @@ export default async function UpcomingEvent() {
 						<div className='w-fit px-3 py-1 bg-[#D7AB6C] rounded-full'>
 							<p className='text-base md:text-lg text-gray-100 font-semibold'>Upcoming Event</p>
 						</div>
-						<EventHeader
+						<UpcomingEventHeader
 							eventTitle={data.frontmatter.eventTitle}
 							eventLocation={data.frontmatter.eventLocation}
 							eventDate={data.frontmatter.eventDate}

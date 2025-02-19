@@ -1,7 +1,6 @@
 import Footer from '@/components/navigation/Footer';
 import PastEventCard from '@/components/layouts/PastEventCard';
 import Navbar from '@/components/navigation/Navbar';
-import Pagination from '@/components/navigation/Pagination';
 
 const eventData = [
 	{
@@ -55,7 +54,6 @@ export default function PastEvents() {
 								<PastEventCard key={event.id} data={event} />
 							))}
 						</div>
-						<Pagination />
 					</div>
 				</div>
 			</main>
