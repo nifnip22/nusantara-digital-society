@@ -44,7 +44,6 @@ export default async function UpcomingEvent() {
 			registrationDeadlineTime: string;
 			registrationLink: string;
 			eventImageSrc: string;
-			eventImageAlt: string;
 			eventGuests: Array<{
 				guestImageSrc: string;
 				guestName: string;
@@ -79,7 +78,7 @@ export default async function UpcomingEvent() {
 							registrationLink={data.frontmatter.registrationLink}
 						/>
 					</div>
-					<EventImage eventImageSrc={data.frontmatter.eventImageSrc} eventImageAlt={data.frontmatter.eventImageAlt} />
+					<EventImage eventImageSrc={data.frontmatter.eventImageSrc} eventImageAlt={data.frontmatter.eventTitle} />
 				</div>
 				<div className='flex flex-col gap-y-20'>
 					<div className='flex flex-col gap-y-4'>

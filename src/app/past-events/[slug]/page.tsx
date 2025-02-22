@@ -73,7 +73,7 @@ export default async function PastEventSlug({ params }: { params: Promise<{ slug
 							participantsCount={data.frontmatter.participantsCount}
 						/>
 					</div>
-					<EventImage eventImageSrc={data.frontmatter.eventImageSrc} eventImageAlt={data.frontmatter.eventImageAlt} />
+					<EventImage eventImageSrc={data.frontmatter.eventImageSrc} eventImageAlt={data.frontmatter.eventTitle} />
 				</div>
 				<div className='flex flex-col gap-y-20'>
 					<div className='flex flex-col gap-y-6'>

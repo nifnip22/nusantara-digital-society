@@ -80,27 +80,6 @@ export default function Home() {
 						<hr className={'w-16 h-3 bg-[#D7AB6C] rounded-full'} />
 						<h1>Artikel</h1>
 					</div>
-					{/* <div className={'mb-72 md:mb-52 relative'}>
-						<div className={'xl:pl-52'}>
-							<Image src={'/img/image_placeholder.png'} alt={'Judul Artikel'} width={1500} height={1500} className={'w-full h-auto rounded-3xl'} />
-						</div>
-						<Link
-							href={'#'}
-							className={
-								'group absolute overflow-hidden top-full xl:top-1/2 left-1/2 xl:left-0 transform -translate-y-1/4 md:-translate-y-1/2 -translate-x-1/2 xl:-translate-x-8 bg-gradient-to-r from-[#D7AB6C] to-[#a38253] opacity-90 hover:opacity-100 hover:shadow-2xl duration-300 text-white p-6 rounded-3xl w-full max-w-[90%] md:max-w-xl'
-							}>
-							<div className={'z-2'}>
-								<p className={'uppercase text-md md:text-lg font-semibold tracking-wide'}>Terbaru</p>
-								<hr className={'w-6 md:w-12 h-1 bg-white mb-4'} />
-								<h2 className={'mt-2 mb-4 text-xl md:text-2xl font-bold line-clamp-2 tracking-wide leading-normal'}>Judul Artikel</h2>
-								<p className={'text-sm md:text-md font-medium w-full line-clamp-3 tracking-wide leading-relaxed'}>Deskripsi/Slug Artikel</p>
-								<p className={'opacity-0 group-hover:opacity-100 duration-300 mt-0 group-hover:mt-4 inline-block text-sm md:text-md font-semibold text-white-500 hover:text-white-400 after:content-["_→"]'}>
-									Baca Selengkapnya
-								</p>
-							</div>
-							<Image src={'/img/nds-branch.svg'} alt={''} width={1500} height={1500} className={'absolute w-72 -translate-x-full -translate-y-1/2 top-3/4 left-full z-1 opacity-0 group-hover:opacity-30 duration-300'} />
-						</Link>
-					</div> */}
 					<ArticleCarousel />
 					<div className={'flex justify-center items-center'}>
 						<Link href={'/artikel'}>

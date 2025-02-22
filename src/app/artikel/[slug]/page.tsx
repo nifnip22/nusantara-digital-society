@@ -65,7 +65,7 @@ export default async function ArtikelSlug({
         />
         <ArtikelImage
           imageSrc={data.frontmatter.imageSrc}
-          imageAlt={data.frontmatter.imageAlt}
+          imageAlt={data.frontmatter.title}
         />
         <article>{data.content}</article>
       </>
