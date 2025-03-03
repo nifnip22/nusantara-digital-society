@@ -1,15 +1,15 @@
 'use client';
 
+import { Suspense, useEffect, useState } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Footer from '@/components/navigation/Footer';
 import ArticleCard from '@/components/layouts/ArticleCard';
 import Navbar from '@/components/navigation/Navbar';
 import { Search } from 'lucide-react';
 import { getAllPosts } from '@/lib/mdx';
-import { useEffect, useState } from 'react';
 import { ArtikelProps } from '@/utils/types';
-import { useSearchParams, useRouter } from 'next/navigation';
 
-export default function Artikel() {
+function ArtikelContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [articles, setArticles] = useState<{
@@ -109,5 +109,13 @@ export default function Artikel() {
 
       <Footer />
     </>
+  );
+}
+
+export default function Artikel() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ArtikelContent />
+    </Suspense>
   );
 }
