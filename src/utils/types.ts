@@ -101,3 +101,20 @@ export interface MasonryProps {
 export interface MasonryArrayProps {
 	photos: MasonryProps[];
 }
+export interface Guest {
+	guestImageSrc: string;
+	guestName: string;
+	guestRole: string;
+  }
+  
+export interface Event {
+	id: number;
+	imageSrc: string;
+	title: string;
+	location: string;
+	datetime: string;
+	participantsCount: string;
+	guests: Guest[];
+	highlights: string[];
+  }
+  
